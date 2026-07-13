@@ -1,12 +1,13 @@
 import React from 'react';
+import Navbar from '../components/layout/Navbar'; // Adjust this path if necessary
+import Footer from '../components/layout/Footer'; // Adjust this path if necessary
 import { 
-  ChevronRight, ChevronLeft, MapPin, Phone, Mail, Download, 
-  ArrowRight, 
+  ChevronRight, ChevronLeft, ArrowRight, Phone,
   Gem, PenTool, Layers, Clock, Leaf, Building2, Home, 
   GraduationCap, Stethoscope, Hotel, Landmark, Church, ShoppingBag 
 } from 'lucide-react';
 
-const VallavarLandingPage = () => {
+const VallavarLandingPage: React.FC = () => {
   return (
     <div className="font-sans text-gray-800 bg-white selection:bg-[#C5A26B] selection:text-white">
       {/* SEO Hidden Text for Scrapers & Crawlers */}
@@ -19,37 +20,17 @@ const VallavarLandingPage = () => {
         </p>
       </div>
 
-      {/* --- NAVBAR --- */}
-      <nav className="absolute top-0 left-0 w-full z-50 px-6 py-4 flex items-center justify-between border-b border-white/10 bg-black/20 backdrop-blur-sm">
-        <div className="flex items-center gap-2">
-          {/* Logo Placeholder */}
-          <div className="text-2xl font-serif text-white tracking-widest flex items-center">
-            <span className="text-[#C5A26B] text-3xl mr-1">V</span> VALLAVAR <span className="text-xs ml-2 text-[#C5A26B] font-sans mt-2">GRC</span>
-          </div>
-        </div>
-        <div className="hidden lg:flex items-center gap-8 text-xs font-semibold tracking-widest text-white/90">
-          <a href="#home" className="hover:text-[#C5A26B] transition-colors">HOME</a>
-          <a href="#about" className="hover:text-[#C5A26B] transition-colors">ABOUT</a>
-          <a href="#services" className="hover:text-[#C5A26B] transition-colors">SERVICES</a>
-          <a href="#projects" className="hover:text-[#C5A26B] transition-colors">PROJECTS</a>
-          <a href="#industries" className="hover:text-[#C5A26B] transition-colors">INDUSTRIES</a>
-          <a href="#process" className="hover:text-[#C5A26B] transition-colors">OUR PROCESS</a>
-          <a href="#blog" className="hover:text-[#C5A26B] transition-colors">BLOG</a>
-          <a href="#contact" className="hover:text-[#C5A26B] transition-colors">CONTACT</a>
-        </div>
-        <button className="hidden md:block bg-[#C5A26B] text-white px-6 py-3 text-xs font-bold tracking-widest hover:bg-[#a68656] transition-colors uppercase">
-          Get a Quote
-        </button>
-      </nav>
+      {/* --- INJECTED NAVBAR COMPONENT --- */}
+      <Navbar />
 
       {/* --- HERO SECTION --- */}
-      <header className="relative w-full h-screen min-h-[800px] flex items-center bg-black overflow-hidden pt-20">
+      <header id="home" className="relative w-full h-screen min-h-[800px] flex items-center bg-black overflow-hidden pt-20">
         <div className="absolute inset-0 w-full h-full">
-          <img
-  src="/images/image1.png"
-  alt="Premium GRC building facade in Chennai"
-  className="w-full h-full object-cover opacity-60"
-/>
+          <img 
+            src="/images/image1.png" 
+            alt="Premium GRC building facade in Chennai" 
+            className="w-full h-full object-cover opacity-60"
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-black/40 to-black/60"></div>
         </div>
         
@@ -101,7 +82,6 @@ const VallavarLandingPage = () => {
             TRUSTED BY LEADING INSTITUTIONS
           </h3>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-            {/* Logos representational placeholders */}
             <div className="text-xl font-black font-sans">ZOHO</div>
             <div className="text-xl font-bold font-serif">SRM</div>
             <div className="text-xl font-bold font-serif">AMET</div>
@@ -285,7 +265,6 @@ const VallavarLandingPage = () => {
           </div>
 
           <div className="relative">
-            {/* Connecting line */}
             <div className="absolute top-6 left-0 w-full h-px bg-white/20 hidden md:block z-0"></div>
             
             <div className="grid grid-cols-2 md:grid-cols-6 gap-8 relative z-10">
@@ -350,18 +329,13 @@ const VallavarLandingPage = () => {
             { num: '15+', label: 'YEARS OF EXPERIENCE' },
             { num: '500+', label: 'PROJECTS COMPLETED' },
             { num: '100+', label: 'EXPERT PROFESSIONALS' },
-            { num: '50+', label: 'CITIES SERVED' },
+            { num: '100%', label: 'CLIENT SATISFACTION' },
           ].map((stat, idx) => (
             <div key={idx} className="py-6 md:py-0">
               <div className="text-4xl md:text-5xl font-serif text-[#C5A26B] mb-2">{stat.num}</div>
               <div className="text-[10px] font-bold tracking-widest text-white uppercase">{stat.label}</div>
             </div>
           ))}
-          {/* Missing 100% Client Satisfaction from design - replacing cities served if needed, but design has 5 actually. Let's add the 5th. */}
-           <div className="py-6 md:py-0 border-t md:border-t-0 md:border-l border-white/20">
-              <div className="text-4xl md:text-5xl font-serif text-[#C5A26B] mb-2">100%</div>
-              <div className="text-[10px] font-bold tracking-widest text-white uppercase">CLIENT SATISFACTION</div>
-            </div>
         </div>
       </section>
 
@@ -404,7 +378,7 @@ const VallavarLandingPage = () => {
       </section>
 
       {/* --- CTA SECTION --- */}
-      <section className="py-16 bg-[#181818] border-b border-white/10">
+      <section id="contact" className="py-16 bg-[#181818] border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
             <h2 className="text-2xl md:text-3xl font-serif text-white mb-2">
@@ -425,68 +399,9 @@ const VallavarLandingPage = () => {
         </div>
       </section>
 
-      {/* --- FOOTER --- */}
-      <footer className="bg-black pt-20 pb-8 px-6 text-white/70">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          
-          <div className="space-y-6">
-            <div className="text-2xl font-serif text-white tracking-widest flex items-center">
-              <span className="text-[#C5A26B] text-3xl mr-1">V</span> VALLAVAR <span className="text-xs ml-2 text-[#C5A26B] font-sans mt-2">GRC</span>
-            </div>
-            <p className="text-xs leading-relaxed max-w-xs text-white/60">
-              Crafting landmark architecture with premium GRC & GRP solutions. Timeless beauty. Engineered to last. 
-            </p>
-            {/* social media */}
-          </div>
-
-          <div>
-            <h4 className="text-xs font-bold tracking-widest text-white uppercase mb-6">QUICK LINKS</h4>
-            <ul className="space-y-3 text-xs">
-              {['Home', 'About Us', 'Services', 'Projects', 'Industries', 'Our Process', 'Blog', 'Contact'].map((link) => (
-                <li key={link}><a href="#" className="hover:text-[#C5A26B] transition-colors">{link}</a></li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-xs font-bold tracking-widest text-white uppercase mb-6">SOLUTIONS</h4>
-            <ul className="space-y-3 text-xs">
-              {['GRC Facades', 'Columns', 'Cornices', 'Domes', 'Jaalis', 'Decorative Panels', 'GRP Products', 'Custom Elements'].map((link) => (
-                <li key={link}><a href="#" className="hover:text-[#C5A26B] transition-colors">{link}</a></li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-xs font-bold tracking-widest text-white uppercase mb-6">CONTACT</h4>
-            <ul className="space-y-4 text-xs mb-8">
-              <li className="flex items-start gap-3">
-                <MapPin size={16} className="text-[#C5A26B] shrink-0 mt-0.5" />
-                <span className="leading-relaxed">SF No. 258/18, Chinnavedampatti<br/>Coimbatore - 641 049, Tamil Nadu, India<br/>(Also Serving Chennai GRC Markets)</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone size={16} className="text-[#C5A26B] shrink-0" />
-                <span>+91 95666 65001</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail size={16} className="text-[#C5A26B] shrink-0" />
-                <span>info@vallavargrc.com</span>
-              </li>
-            </ul>
-            <button className="bg-[#C5A26B] text-white px-6 py-3 text-[10px] font-bold tracking-wider hover:bg-[#a68656] transition-colors flex items-center gap-2 uppercase w-full justify-center">
-              DOWNLOAD BROCHURE <Download size={14} />
-            </button>
-          </div>
-        </div>
-
-        <div className="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-white/50 tracking-wider">
-          <p>© 2026 Vallavar GRC. All Rights Reserved.</p>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms & Conditions</a>
-          </div>
-        </div>
-      </footer>
+      {/* --- INJECTED FOOTER COMPONENT --- */}
+      <Footer />
+      
     </div>
   );
 };
