@@ -3,14 +3,14 @@
 import React, { useState } from "react";
 
 const NAV_LINKS = [
-  { label: "HOME", href: "#home" },
-  { label: "ABOUT", href: "#about" },
-  { label: "SERVICES", href: "#services" },
-  { label: "PROJECTS", href: "#projects" },
-  { label: "INDUSTRIES", href: "#industries" },
-  { label: "OUR PROCESS", href: "#process" },
-  { label: "BLOG", href: "#blog" },
-  { label: "CONTACT", href: "#contact" },
+  { label: "HOME", href: "/home" },
+  { label: "ABOUT", href: "/about" },
+  { label: "SERVICES", href: "/services" },
+  { label: "PROJECTS", href: "/projects" },
+  { label: "INDUSTRIES", href: "/industries" },
+  { label: "OUR PROCESS", href: "/manufacturing" },
+  { label: "BLOG", href: "/blog" },
+  { label: "CONTACT", href: "/contact" },
 ];
 
 const Navbar: React.FC = () => {

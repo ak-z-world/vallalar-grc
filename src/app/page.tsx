@@ -24,7 +24,7 @@ const VallavarLandingPage: React.FC = () => {
       <Navbar />
 
       {/* --- HERO SECTION --- */}
-      <header id="home" className="relative w-full h-screen min-h-[800px] flex items-center bg-black overflow-hidden pt-20">
+      <header id="home" className="relative w-full min-h-screen md:h-screen md:min-h-[800px] flex items-center bg-black overflow-hidden pt-20 sm:pt-20 md:pt-15">
         <div className="absolute inset-0 w-full h-full">
           <img 
             src="/images/image1.png" 
@@ -113,9 +113,9 @@ const VallavarLandingPage: React.FC = () => {
           </div>
           <div className="relative">
             <img 
-              src="image_f142be.jpg" 
+              src="images/image6.svg" 
               alt="Modern architectural villa featuring custom GRC elements in Chennai" 
-              className="w-full h-auto rounded-sm shadow-2xl"
+              className="w-full h-auto rounded-mm shadow-2xl"
             />
             <div className="absolute -inset-4 border border-[#C5A26B]/30 rounded-sm -z-10 translate-x-4 translate-y-4 hidden md:block"></div>
           </div>
@@ -135,19 +135,17 @@ const VallavarLandingPage: React.FC = () => {
           </div>
           
           <div className="flex items-center gap-4">
-            <button className="p-2 rounded-full border border-gray-300 text-gray-500 hover:bg-[#C5A26B] hover:text-white hover:border-[#C5A26B] transition-colors" aria-label="Previous">
-              <ChevronLeft size={24} />
-            </button>
+            
             <div className="flex-1 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 overflow-hidden">
               {[
-                { title: 'GRC FACADES', img: 'image_f13ff7.jpg' },
-                { title: 'COLUMNS', img: '/api/placeholder/300/400' },
-                { title: 'CORNICES', img: '/api/placeholder/300/400' },
-                { title: 'DOMES', img: '/api/placeholder/300/400' },
-                { title: 'JAALIS', img: '/api/placeholder/300/400' },
-                { title: 'DECORATIVE PANELS', img: '/api/placeholder/300/400' },
-                { title: 'GRP PRODUCTS', img: '/api/placeholder/300/400' },
-                { title: 'CUSTOM ELEMENTS', img: '/api/placeholder/300/400' },
+                { title: 'GRC FACADES', img: 'images/image11.svg' },
+                { title: 'COLUMNS', img: 'images/image17.png' },
+                { title: 'CORNICES', img: 'images/image16.png' },
+                { title: 'DOMES', img: 'images/image15.png' },
+                { title: 'JAALIS', img: 'images/image12.svg' },
+                { title: 'DECORATIVE PANELS', img: 'images/image14.png' },
+                { title: 'GRP PRODUCTS', img: 'images/image13.png' },
+                { title: 'CUSTOM ELEMENTS', img: 'images/image18.png' },
               ].map((item, idx) => (
                 <div key={idx} className="bg-white border border-gray-200 group cursor-pointer hover:shadow-xl transition-shadow">
                   <div className="h-40 overflow-hidden">
@@ -160,9 +158,7 @@ const VallavarLandingPage: React.FC = () => {
                 </div>
               ))}
             </div>
-            <button className="p-2 rounded-full border border-gray-300 text-gray-500 hover:bg-[#C5A26B] hover:text-white hover:border-[#C5A26B] transition-colors" aria-label="Next">
-              <ChevronRight size={24} />
-            </button>
+           
           </div>
           
           <div className="text-center mt-12">
@@ -214,35 +210,40 @@ const VallavarLandingPage: React.FC = () => {
             </h2>
           </div>
 
-          <div className="flex items-center gap-6">
-            <button className="p-2 rounded-full border border-gray-300 text-gray-500 hover:bg-[#C5A26B] hover:text-white transition-colors hidden md:block" aria-label="Previous Project">
-              <ChevronLeft size={24} />
-            </button>
-            <div className="flex-1 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                { title: 'ZOHO CORPORATE CAMPUS', loc: 'Chennai', img: 'image_f13ff7.jpg' },
-                { title: 'SRM UNIVERSITY BLOCK', loc: 'Chennai', img: '/api/placeholder/400/300' },
-                { title: 'DLF IT PARK', loc: 'Chennai', img: '/api/placeholder/400/300' },
-                { title: 'LUXURY VILLA', loc: 'ECR, Chennai', img: 'image_f142be.jpg' },
-              ].map((proj, idx) => (
-                <div key={idx} className="bg-white border border-gray-200 group cursor-pointer shadow-sm hover:shadow-xl transition-all">
-                  <div className="h-48 overflow-hidden">
-                    <img src={proj.img} alt={`${proj.title} - ${proj.loc}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                  </div>
-                  <div className="p-5 flex items-end justify-between">
-                    <div>
-                      <h4 className="text-xs font-bold tracking-wider text-gray-900 mb-1">{proj.title}</h4>
-                      <p className="text-[#C5A26B] text-[10px] italic">{proj.loc}</p>
-                    </div>
-                    <ArrowRight size={16} className="text-gray-400 group-hover:text-[#C5A26B] transition-colors" />
-                  </div>
-                </div>
-              ))}
-            </div>
-            <button className="p-2 rounded-full border border-gray-300 text-gray-500 hover:bg-[#C5A26B] hover:text-white transition-colors hidden md:block" aria-label="Next Project">
-              <ChevronRight size={24} />
-            </button>
+          <div className="w-full max-w-6xl mx-auto px-4 py-12 flex justify-center items-center">
+  {/* Adjusted columns to max out at 3 (grid-cols-3) to match the data count and center properly */}
+  <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+    {[
+      { title: 'ZOHO CORPORATE CAMPUS', loc: 'Chennai', img: 'images/zoho-logo-web.svg', isLogo: true },
+      { title: 'SRM UNIVERSITY BLOCK', loc: 'Chennai', img: 'images/srm-college.jpg', isLogo: false },
+      { title: 'DLF IT PARK', loc: 'Chennai', img: 'images/image19.jpeg', isLogo: false },
+    ].map((proj, idx) => (
+      <div 
+        key={idx} 
+        className="w-full max-w-[360px] bg-white border border-gray-100 group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+      >
+        {/* Fixed image container sizing and added treatment for logos vs real photography */}
+        <div className="h-56 overflow-hidden flex items-center justify-center bg-gray-50 relative">
+          <img 
+            src={proj.img} 
+            alt={`${proj.title} - ${proj.loc}`} 
+            className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${
+              proj.isLogo ? 'object-contain p-6' : 'object-cover'
+            }`} 
+          />
+        </div>
+        
+        <div className="p-5 flex items-end justify-between border-t border-gray-50">
+          <div>
+            <h4 className="text-xs font-bold tracking-wider text-gray-900 mb-1">{proj.title}</h4>
+            <p className="text-[#C5A26B] text-[10px] italic">{proj.loc}</p>
           </div>
+          <ArrowRight size={16} className="text-gray-400 group-hover:text-[#C5A26B] group-hover:translate-x-1 transition-all" />
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
 
           <div className="text-center mt-12">
             <a href="#projects" className="inline-flex items-center gap-2 text-sm font-bold tracking-widest text-gray-800 hover:text-[#C5A26B] transition-colors uppercase">
