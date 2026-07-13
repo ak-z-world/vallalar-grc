@@ -46,60 +46,7 @@ const PROJECTS_DATA = [
     img: "/images/image23.png", // Map to image_29b498.jpg / project asset
     gridClass: "col-span-1 md:col-span-1 lg:col-span-3 h-[320px] md:h-[400px] lg:h-[500px] lg:-mt-24 z-10"
   },
-  {
-    id: 4,
-    title: "ISKCON Temple",
-    location: "Bengaluru, Karnataka",
-    category: "religious",
-    tag: "RELIGIOUS",
-    img: "/api/placeholder/400/500",
-    gridClass: "col-span-1 md:col-span-1 lg:col-span-3 h-[380px] md:h-[480px] lg:-mt-24"
-  },
-  {
-    id: 5,
-    title: "Luxury Villa",
-    location: "ECR, Chennai",
-    category: "residential",
-    tag: "RESIDENTIAL",
-    img: "/images/image24.png", // Map to image_2a2061.jpg
-    gridClass: "col-span-1 md:col-span-2 lg:col-span-6 h-[320px] md:h-[380px]"
-  },
-  {
-    id: 6,
-    title: "Le Royal Méridien",
-    location: "Chennai, Tamil Nadu",
-    category: "hospitality",
-    tag: "HOSPITALITY",
-    img: "/api/placeholder/400/350",
-    gridClass: "col-span-1 md:col-span-1 lg:col-span-3 h-[320px] md:h-[380px]"
-  },
-  {
-    id: 7,
-    title: "Amity International School",
-    location: "Hyderabad, Telangana",
-    category: "educational",
-    tag: "EDUCATIONAL",
-    img: "/api/placeholder/400/350",
-    gridClass: "col-span-1 md:col-span-1 lg:col-span-4 h-[320px] md:h-[360px]"
-  },
-  {
-    id: 8,
-    title: "Phoenix Marketcity",
-    location: "Chennai, Tamil Nadu",
-    category: "commercial",
-    tag: "COMMERCIAL",
-    img: "/images/image24.png",
-    gridClass: "col-span-1 md:col-span-2 lg:col-span-5 h-[320px] md:h-[360px]"
-  },
-  {
-    id: 9,
-    title: "Secretariat Extension Building",
-    location: "Chennai, Tamil Nadu",
-    category: "government",
-    tag: "GOVERNMENT",
-    img: "/api/placeholder/400/350",
-    gridClass: "col-span-1 md:col-span-1 lg:col-span-3 h-[320px] md:h-[360px]"
-  }
+  
 ];
 
 const ProjectsPage = () => {
@@ -134,7 +81,7 @@ const ProjectsPage = () => {
           <div className="hidden lg:block lg:col-span-5 bg-gradient-to-r from-white via-white/95 to-transparent z-10" />
           <div className="col-span-1 lg:col-span-7 relative h-full w-full opacity-30 lg:opacity-100">
             <Image 
-              src="/images/image23.png" // Displays your high-fidelity image_29b498.jpg
+              src="/images/image22.png" // Displays your high-fidelity image_29b498.jpg
               alt="Vallavar GRC iconic architectural exterior implementation project" 
               fill
               priority

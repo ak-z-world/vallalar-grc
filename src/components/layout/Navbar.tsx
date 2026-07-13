@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 const NAV_LINKS = [
-  { label: "HOME", href: "/home" },
+  { label: "HOME", href: "/" },
   { label: "ABOUT", href: "/about" },
   { label: "SERVICES", href: "/services" },
   { label: "PROJECTS", href: "/projects" },

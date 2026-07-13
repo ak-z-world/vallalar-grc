@@ -51,7 +51,7 @@ export default function ManufacturingPage() {
       <header className="relative w-full h-[70vh] min-h-[550px] flex flex-col justify-between bg-black overflow-hidden pt-24">
         <div className="absolute inset-0 w-full h-full">
           <Image 
-            src="/images/image25.png" // Maps to image_2a9cde.jpg featuring the heavy factory floor setup
+            src="/images/image26.png" // Maps to image_2a9cde.jpg featuring the heavy factory floor setup
             alt="Vallavar GRC heavy state-of-the-art concrete casting and CNC molding facility asset floor"
             fill
             priority
