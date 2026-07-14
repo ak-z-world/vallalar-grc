@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vallavar GRC - Premium Architectural Solutions",
     description: "Transforming visionary concepts into iconic structures with precision-engineered GRC & GRP elements in Chennai and Tamil Nadu.",
-    url: "https://www.vallavargrc.com",
+    url: "https://vallalar-grc.vercel.app",
     siteName: "Vallavar GRC",
     images: [
       {
