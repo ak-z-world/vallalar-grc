@@ -25,7 +25,7 @@ export const viewport: Viewport = {
 
 // 3. AEO, GEO, and SEO Metadata Configuration
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.vallavargrc.com"), // REPLACE WITH YOUR ACTUAL PRODUCTION URL
+  metadataBase: new URL("https://vallalar-grc.vercel.app"), // REPLACE WITH YOUR ACTUAL PRODUCTION URL
   title: {
     default: "Vallavar GRC - Premium GRC & GRP Architectural Solutions in Chennai",
     template: "%s | Vallavar GRC",
@@ -94,8 +94,8 @@ export default function RootLayout({
     "@type": ["LocalBusiness", "Manufacturer"],
     "name": "Vallavar GRC",
     "image": "https://vallalar-grc.vercel.app/og-image.png",
-    "@id": "https://www.vallavargrc.com",
-    "url": "https://www.vallavargrc.com",
+    "@id": "https://vallalar-grc.vercel.app",
+    "url": "https://vallalar-grc.vercel.app",
     "telephone": "+919566665001",
     "email": "info@vallavargrc.com",
     "address": {
