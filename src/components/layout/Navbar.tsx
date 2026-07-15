@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link"; // Using Next.js Link for internal App Router navigation performance
 
 const NAV_LINKS = [
   { label: "HOME", href: "/" },
@@ -19,35 +20,55 @@ const Navbar: React.FC = () => {
   return (
     <>
       <nav className="absolute top-0 left-0 w-full z-50 px-4 sm:px-6 py-4 flex items-center justify-between border-b border-white/10 bg-black/20 backdrop-blur-sm">
-        <div className="flex items-center gap-2">
-          <a href="#home" className="text-xl sm:text-2xl font-serif text-white tracking-widest flex items-center hover:opacity-90 transition-opacity">
-            <span className="text-[#C5A26B] text-2xl sm:text-3xl mr-1">V</span> 
-            VALLAVAR{" "}
-            <span className="text-[10px] sm:text-xs ml-1 sm:ml-2 text-[#C5A26B] font-sans mt-1 sm:mt-2">
-              GRC
+        {/* Brand Logo & Typography Wrapper */}
+        <div className="flex items-center">
+          <Link
+            href="/"
+            className="text-xl sm:text-2xl font-serif text-white tracking-widest flex items-center gap-0 hover:opacity-90 transition-opacity group"
+            onClick={() => setIsOpen(false)}
+          >
+            {/* Optimized & Enlarged Logo Container:
+      - h-12 (mobile) and sm:h-16 (desktop) makes the graphic element bigger
+      - -mx-2 (negative margins) ensures the larger image doesn't force extra space on left/right sides
+      - gap-0 on parent ensures the text aligns tightly to the graphic's edge
+    */}
+            <img
+              src="/logo.png"
+              alt="Vallalar GRC Logo"
+              className="h-12 sm:h-16 w-auto -mx-2 object-contain transition-transform duration-300 group-hover:scale-[1.04]"
+            />
+
+            <span className="leading-none select-none pl-1">
+              VALLALAR{" "}
+              <span className="text-[10px] sm:text-xs ml-0.5 text-[#C5A26B] font-sans font-semibold tracking-wider inline-block align-middle">
+                GRC
+              </span>
             </span>
-          </a>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-6 xl:gap-8 text-xs font-semibold tracking-widest text-white/90">
           {NAV_LINKS.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               className="hover:text-[#C5A26B] transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-px after:bg-[#C5A26B] hover:after:w-full after:transition-all after:duration-300"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
 
         {/* Desktop CTA */}
-        <button className="hidden md:block bg-[#C5A26B] text-white px-6 py-3 text-xs font-bold tracking-widest hover:bg-[#a68656] transition-colors uppercase shadow-lg shadow-black/20">
+        <Link
+          href="/contact"
+          className="hidden md:block bg-[#C5A26B] text-white px-6 py-3 text-xs font-bold tracking-widest hover:bg-[#a68656] transition-colors uppercase shadow-lg shadow-black/20 text-center"
+        >
           Get a Quote
-        </button>
+        </Link>
 
-        {/* Mobile Menu Toggle */}
+        {/* Mobile Menu Toggle Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="lg:hidden text-white p-2 z-50 relative focus:outline-none"
@@ -66,7 +87,7 @@ const Navbar: React.FC = () => {
       <div className={`fixed inset-0 bg-black/95 z-40 lg:hidden flex flex-col justify-center items-center transition-all duration-500 ease-in-out ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
         <div className="flex flex-col items-center gap-6 text-base font-semibold tracking-widest text-white">
           {NAV_LINKS.map((link, idx) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               onClick={() => setIsOpen(false)}
@@ -74,14 +95,16 @@ const Navbar: React.FC = () => {
               className={`hover:text-[#C5A26B] transform transition-all duration-300 ${isOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <button
+          <Link
+            href="/contact"
             onClick={() => setIsOpen(false)}
-            className={`mt-4 bg-[#C5A26B] text-white px-8 py-3.5 text-xs font-bold tracking-widest hover:bg-[#a68656] transition-all uppercase rounded-sm shadow-md ${isOpen ? "scale-100 opacity-100" : "scale-95 opacity-0"} duration-500 delay-300`}
+            style={{ transitionDelay: isOpen ? `${NAV_LINKS.length * 50}ms` : "0ms" }}
+            className={`mt-4 bg-[#C5A26B] text-white px-8 py-3.5 text-xs font-bold tracking-widest hover:bg-[#a68656] transition-all uppercase rounded-sm shadow-md text-center transform ${isOpen ? "scale-100 opacity-100" : "scale-95 opacity-0"} duration-500`}
           >
             Get a Quote
-          </button>
+          </Link>
         </div>
       </div>
     </>
