@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { label: "PROJECTS", href: "/projects" },
   { label: "INDUSTRIES", href: "/industries" },
   { label: "OUR PROCESS", href: "/manufacturing" },
-  { label: "BLOG", href: "/blog" },
+  // { label: "BLOG", href: "/blog" },
   { label: "CONTACT", href: "/contact" },
 ];
 
@@ -19,7 +19,8 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="absolute top-0 left-0 w-full z-50 px-4 sm:px-6 py-4 flex items-center justify-between border-b border-white/10 bg-black/20 backdrop-blur-sm">
+      {/* Changed class from 'absolute' to 'fixed' to enable sticky scrolling behavior */}
+      <nav className="fixed top-0 left-0 w-full z-50 px-4 sm:px-6 py-4 flex items-center justify-between border-b border-white/10 bg-black/20 backdrop-blur-sm">
         {/* Brand Logo & Typography Wrapper */}
         <div className="flex items-center">
           <Link
@@ -28,10 +29,10 @@ const Navbar: React.FC = () => {
             onClick={() => setIsOpen(false)}
           >
             {/* Optimized & Enlarged Logo Container:
-      - h-12 (mobile) and sm:h-16 (desktop) makes the graphic element bigger
-      - -mx-2 (negative margins) ensures the larger image doesn't force extra space on left/right sides
-      - gap-0 on parent ensures the text aligns tightly to the graphic's edge
-    */}
+              - h-12 (mobile) and sm:h-16 (desktop) makes the graphic element bigger
+              - -mx-2 (negative margins) ensures the larger image doesn't force extra space on left/right sides
+              - gap-0 on parent ensures the text aligns tightly to the graphic's edge
+            */}
             <img
               src="/logo.png"
               alt="Vallalar GRC Logo"

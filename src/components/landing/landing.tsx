@@ -564,11 +564,6 @@ const VallavarLandingPage: React.FC = () => {
             WHAT OUR CLIENTS SAY
           </h2>
           <div className="relative px-12">
-            <button
-              className="absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-gray-300 text-gray-500 hover:bg-[#C5A26B] hover:text-white transition-colors"
-              aria-label="Previous Testimonial">
-              <ChevronLeft size={20} />
-            </button>
 
             <div className="flex flex-col items-center">
               <span className="text-[#C5A26B] font-serif text-6xl leading-none mb-4">
@@ -580,26 +575,21 @@ const VallavarLandingPage: React.FC = () => {
               </p>
               <div className="flex items-center gap-4">
                 <img
-                  src="/api/placeholder/60/60"
-                  alt="Ar. Ramesh Krishnan"
+                  src="/images/arun.png"
+                  alt="Er. Arun"
                   className="w-12 h-12 rounded-full object-cover grayscale"
                 />
                 <div className="text-left">
                   <h4 className="text-sm font-bold text-gray-900">
-                    — Ar. Ramesh Krishnan
+                    — Er. Arun
                   </h4>
                   <p className="text-xs text-gray-500">
-                    Principal Architect, RKA Architecture
+                    Principal Architect, Arshu Constructions
                   </p>
                 </div>
               </div>
             </div>
 
-            <button
-              className="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-gray-300 text-gray-500 hover:bg-[#C5A26B] hover:text-white transition-colors"
-              aria-label="Next Testimonial">
-              <ChevronRight size={20} />
-            </button>
           </div>
 
           <div className="flex justify-center gap-2 mt-12">

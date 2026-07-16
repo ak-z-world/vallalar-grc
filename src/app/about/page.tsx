@@ -222,56 +222,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* --- CERTIFICATIONS & STATS GRID --- */}
-      <section className="pb-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
-
-          {/* Certifications */}
-          <div className="border border-gray-200 p-8">
-            <h4 className="text-[10px] font-bold tracking-widest text-gray-500 uppercase mb-8">CERTIFICATIONS</h4>
-            <div className="flex flex-wrap gap-8 items-center justify-between">
-              <div className="text-center">
-                <div className="text-2xl font-black text-gray-900 tracking-tighter">ISO</div>
-                <div className="text-[10px] font-bold text-gray-900">9001:2015</div>
-                <div className="text-[8px] text-gray-500 mt-1 uppercase">Quality Management</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-black text-gray-900 tracking-tighter">ISO</div>
-                <div className="text-[10px] font-bold text-gray-900">14001:2015</div>
-                <div className="text-[8px] text-gray-500 mt-1 uppercase">Environmental Management</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-black text-gray-900 tracking-tighter">ISO</div>
-                <div className="text-[10px] font-bold text-gray-900">45001:2018</div>
-                <div className="text-[8px] text-gray-500 mt-1 uppercase">Occupational Health & Safety</div>
-              </div>
-              <div className="opacity-50 grayscale hover:grayscale-0 transition-all flex items-center justify-center">
-                <Award size={40} className="text-gray-800" />
-              </div>
-            </div>
-          </div>
-
-          {/* By The Numbers */}
-          <div className="border border-gray-200 p-8">
-            <h4 className="text-[10px] font-bold tracking-widest text-gray-500 uppercase mb-8">BY THE NUMBERS</h4>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-x divide-gray-100">
-              {[
-                { num: "15+", label: "Years of Experience" },
-                { num: "500+", label: "Projects Completed" },
-                { num: "100+", label: "Expert Professionals" },
-                { num: "100%", label: "Quality Commitment" }
-              ].map((stat, idx) => (
-                <div key={idx} className="flex flex-col items-center justify-center">
-                  <div className="text-3xl font-serif text-[#C5A26B] mb-2">{stat.num}</div>
-                  <div className="text-[9px] font-bold text-gray-600 uppercase max-w-[80px]">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-        </div>
-      </section>
-
       {/* --- CTA SECTION --- */}
       <section className="bg-[#1C2421] py-20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10 relative z-10">
