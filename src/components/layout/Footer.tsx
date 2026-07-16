@@ -85,14 +85,15 @@ const Footer = () => {
             <li className="flex flex-col sm:flex-row items-center sm:items-start gap-2.5 sm:gap-3">
               <MapPin size={16} className="text-[#C5A26B] shrink-0 sm:mt-0.5" />
               <span className="leading-relaxed">
-                SF No. 258/18, Chinnavedampatti<br/>
-                Coimbatore - 641 049, Tamil Nadu, India<br/>
+                No. 258/18, JEYENDERA SARASWATHI NAGAR,<br/>
+                GUDUVANCHERY,<br/>
+                CHENNAI - 603202, TAMIL NADU, INDIA<br/>
                 <span className="text-white/40 italic text-[11px]">(Also Serving Chennai GRC Markets)</span>
               </span>
             </li>
             <li className="flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3">
               <Phone size={16} className="text-[#C5A26B] shrink-0" />
-              <a href="tel:+919566665001" className="hover:text-[#C5A26B] transition-colors">+91 95666 65001</a>
+              <a href="tel:+919698216241" className="hover:text-[#C5A26B] transition-colors">+91 9698216241</a>
             </li>
             <li className="flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3">
               <Mail size={16} className="text-[#C5A26B] shrink-0" />

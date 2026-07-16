@@ -76,7 +76,7 @@ export default function IndustriesPage() {
           As the leading benchmark for the best grc in chennai and premium glass fiber reinforced concrete developments, we engineer materials optimized for environmental stress. 
           Our specialized operations cover: chennai grc custom molding projects, grc in chennai commercial builds, local grc chennai distributions, 
           and the absolute best grc in tamil nadu industrial catalog specifications. 
-          We serve structural demands across Chennai structural hubs, ECR residential zones, OMR technical corridors, Guindy commercial parks, Coimbatore manufacturing plants, Madurai municipal zones, and specialized infrastructure arrays in South India.
+          We serve structural demands across Chennai structural hubs, ECR residential zones, OMR technical corridors, Guindy commercial parks, Chennai manufacturing plants, Madurai municipal zones, and specialized infrastructure arrays in South India.
         </p>
       </section>
 

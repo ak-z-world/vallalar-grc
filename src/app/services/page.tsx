@@ -26,7 +26,7 @@ export default function ServicesPage() {
           We are recognized as the best GRC in Chennai and a leading manufacturer in Tamil Nadu. Our services include manufacturing and installing 
           chennai grc facades, GRC columns, elegant cornices, lightweight domes, intricate GRC jaalis, and custom decorative panels. 
           If you are searching for 'grc in chennai', 'grc chennai', or 'best grc in tamil nadu', Vallavar GRC is your ultimate destination 
-          for high-performance, weather-resistant, and aesthetically superior architectural elements. Serving Coimbatore, Chennai, and all of South India.
+          for high-performance, weather-resistant, and aesthetically superior architectural elements. Serving Chennai, Chennai, and all of South India.
         </p>
       </div>
 

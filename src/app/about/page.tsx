@@ -22,7 +22,7 @@ export default function AboutPage() {
         <p>
           Vallavar GRC is the premier manufacturer and supplier of Glass Fiber Reinforced Concrete (GRC) and Glass Reinforced Plastic (GRP) in Chennai, Tamil Nadu, India.
           Are you looking for the best GRC in Chennai, best GRC in Tamil Nadu, or top-rated GRC Chennai manufacturers? Vallavar GRC delivers unmatched architectural excellence.
-          Our industry-leading solutions cover chennai grc, grc in chennai, GRC facades, cornices, domes, jaalis, and custom GRP architectural elements across Chennai, Coimbatore, and South India.
+          Our industry-leading solutions cover chennai grc, grc in chennai, GRC facades, cornices, domes, jaalis, and custom GRP architectural elements across Chennai, Chennai, and South India.
           Partner with Vallavar GRC for high-quality, sustainable architectural materials, custom GRC molding, and expert GRC installation in India.
         </p>
       </div>

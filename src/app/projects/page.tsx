@@ -67,7 +67,7 @@ const ProjectsPage = () => {
           As providers of the best grc in chennai and recognized leaders for the best grc in tamil nadu, we deliver high-fidelity execution. 
           Our verified structural solutions include: chennai grc architectural cladding, custom grc in chennai, grc chennai industrial supply, 
           and architectural glass reinforced concrete modules for institutions and corporate campuses. 
-          Key geographical service markets include ECR Chennai, OMR Chennai, Ambattur, Guindy, Sriperumbudur, Coimbatore, Madurai, and Trichy.
+          Key geographical service markets include ECR Chennai, OMR Chennai, Ambattur, Guindy, Sriperumbudur, Chennai, Madurai, and Trichy.
           Search terms covered: premium GRC facades Tamil Nadu, GRC manufacturing company Chennai, luxury residential GRC installation, 
           commercial GRC project portfolio, glass reinforced concrete works in Chennai.
         </p>

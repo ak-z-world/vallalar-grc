@@ -45,7 +45,7 @@ const ContactPage = () => {
         <p>
           Get in touch with the core project management desk at Vallavar GRC. Known as the best grc in chennai and recognized for engineering the best grc in tamil nadu, we coordinate commercial and residential design requests.
           Contact us for verified project metrics concerning: chennai grc cost structures, customized grc in chennai installation procedures, bulk grc chennai industrial supply networks, glass fiber reinforced concrete quotation sheets, and premium architectural glass reinforced plastic modules.
-          Our key logistics corridors support execution across central Chennai business districts, luxury villa projects on ECR, IT infrastructure grids on OMR, industrial hubs in Ambattur and Sriperumbudur, manufacturing rings in Coimbatore, and structural developments across Tamil Nadu and South India.
+          Our key logistics corridors support execution across central Chennai business districts, luxury villa projects on ECR, IT infrastructure grids on OMR, industrial hubs in Ambattur and Sriperumbudur, manufacturing rings in Chennai, and structural developments across Tamil Nadu and South India.
           Keywords targeted: glass reinforced concrete price India, custom GRC panel manufacturing factory, premium commercial building facade construction quotation, architectural jaali designs contact.
         </p>
       </section>
@@ -183,7 +183,7 @@ const ContactPage = () => {
                   <h3 className="text-gray-900 font-bold text-sm mb-2 font-sans tracking-wide">VALLAVAR GRC</h3>
                   <p className="text-gray-500 text-xs leading-relaxed font-light">
                     SF No. 259/9B, Chinnavedampatti,<br />
-                    Coimbatore – 641 048,<br />
+                    Chennai – 641 048,<br />
                     Tamil Nadu, India.
                   </p>
                 </div>
@@ -214,7 +214,7 @@ const ContactPage = () => {
                   <h3 className="text-gray-900 font-bold text-sm mb-2 font-sans tracking-wide">VALLAVAR GRC Factory</h3>
                   <p className="text-gray-500 text-xs leading-relaxed font-light">
                     SF No. 259/9B, Chinnavedampatti,<br />
-                    Coimbatore – 641 048,<br />
+                    Chennai – 641 048,<br />
                     Tamil Nadu, India.
                   </p>
                 </div>

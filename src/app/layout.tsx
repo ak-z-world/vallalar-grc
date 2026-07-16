@@ -101,7 +101,7 @@ export default function RootLayout({
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "SF No. 259/9B, Chinnavedampatti",
-      "addressLocality": "Coimbatore",
+      "addressLocality": "Chennai",
       "addressRegion": "Tamil Nadu",
       "postalCode": "641048",
       "addressCountry": "IN"
@@ -111,7 +111,7 @@ export default function RootLayout({
       "latitude": 11.0500, // Update with exact coordinates if necessary
       "longitude": 76.9800 // Update with exact coordinates if necessary
     },
-    "areaServed": ["Chennai", "Coimbatore", "Tamil Nadu", "South India"],
+    "areaServed": ["Chennai", "Chennai", "Tamil Nadu", "South India"],
     "description": "Leading manufacturer of Glass Fiber Reinforced Concrete (GRC) and GRP elements in Chennai and Tamil Nadu.",
     "sameAs": [
       // Add your actual social media links here
