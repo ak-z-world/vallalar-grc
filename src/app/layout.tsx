@@ -27,8 +27,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://vallalar-grc.vercel.app"), // REPLACE WITH YOUR ACTUAL PRODUCTION URL
   title: {
-    default: "Vallavar GRC - Premium GRC & GRP Architectural Solutions in Chennai",
-    template: "%s | Vallavar GRC",
+    default: "Vallalar GRC - Premium GRC & GRP Architectural Solutions in Chennai",
+    template: "%s | Vallalar GRC",
   },
   description: "Leading manufacturer of Glass Fiber Reinforced Concrete (GRC) and GRP elements in Chennai. We deliver premium facades, columns, domes, and jaalis across Tamil Nadu and South India.",
   keywords: [
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     "architectural grc columns",
     "grc facades india"
   ],
-  authors: [{ name: "Vallavar GRC" }],
-  creator: "Vallavar GRC",
-  publisher: "Vallavar GRC",
+  authors: [{ name: "Vallalar GRC" }],
+  creator: "Vallalar GRC",
+  publisher: "Vallalar GRC",
   formatDetection: {
     email: false,
     address: false,
@@ -55,16 +55,16 @@ export const metadata: Metadata = {
   },
   // Open Graph for Facebook/LinkedIn and AI Scrapers
   openGraph: {
-    title: "Vallavar GRC - Premium Architectural Solutions",
+    title: "Vallalar GRC - Premium Architectural Solutions",
     description: "Transforming visionary concepts into iconic structures with precision-engineered GRC & GRP elements in Chennai and Tamil Nadu.",
     url: "https://vallalar-grc.vercel.app",
-    siteName: "Vallavar GRC",
+    siteName: "Vallalar GRC",
     images: [
       {
         url: "/og-image.png", // Assuming this is in your public folder
         width: 1200,
         height: 630,
-        alt: "Vallavar GRC - Premium Landmark Architecture",
+        alt: "Vallalar GRC - Premium Landmark Architecture",
       },
     ],
     locale: "en_IN",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   // Twitter Cards
   twitter: {
     card: "summary_large_image",
-    title: "Vallavar GRC - Premium Architectural Solutions",
+    title: "Vallalar GRC - Premium Architectural Solutions",
     description: "Transforming visionary concepts into iconic structures with precision-engineered GRC & GRP elements.",
     images: ["/og-image.png"],
   },
@@ -92,12 +92,12 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "Manufacturer"],
-    "name": "Vallavar GRC",
+    "name": "Vallalar GRC",
     "image": "https://vallalar-grc.vercel.app/og-image.png",
     "@id": "https://vallalar-grc.vercel.app",
     "url": "https://vallalar-grc.vercel.app",
     "telephone": "+919566665001",
-    "email": "info@vallavargrc.com",
+    "email": "info@vallalargrc.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "SF No. 259/9B, Chinnavedampatti",
@@ -115,9 +115,9 @@ export default function RootLayout({
     "description": "Leading manufacturer of Glass Fiber Reinforced Concrete (GRC) and GRP elements in Chennai and Tamil Nadu.",
     "sameAs": [
       // Add your actual social media links here
-      "https://www.facebook.com/vallavargrc",
-      "https://www.instagram.com/vallavargrc",
-      "https://www.linkedin.com/company/vallavargrc"
+      "https://www.facebook.com/vallalargrc",
+      "https://www.instagram.com/vallalargrc",
+      "https://www.linkedin.com/company/vallalargrc"
     ],
     "makesOffer": [
       {
