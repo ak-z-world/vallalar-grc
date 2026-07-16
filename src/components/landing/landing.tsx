@@ -23,6 +23,7 @@ import {
   Award,
   ShieldCheck,
 } from "lucide-react";
+import Link from "next/link";
 
 const VallavarLandingPage: React.FC = () => {
   return (
@@ -55,7 +56,7 @@ const VallavarLandingPage: React.FC = () => {
             className="object-cover object-right sm:object-center opacity-95"
             sizes="100vw"
           />
-          
+
           <div className="absolute inset-0 bg-gradient-to-t from-[#FAF9F6] via-[#FAF9F6]/40 to-transparent lg:hidden" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#FAF9F6]/90 via-[#FAF9F6]/60 to-transparent hidden lg:block" />
         </div>
@@ -88,20 +89,25 @@ const VallavarLandingPage: React.FC = () => {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="bg-[#C5A26B] hover:bg-[#a68656] text-white px-6 sm:px-8 py-3.5 text-xs font-bold tracking-widest transition-colors flex items-center gap-2.5 uppercase shadow-md shadow-[#C5A26B]/20 rounded-xs group">
-                <span>EXPLORE PROJECTS</span>
-                <ArrowRight
-                  size={14}
-                  className="group-hover:translate-x-1 transition-transform"
-                />
-              </button>
-              <button className="border border-gray-900/30 bg-white/70 backdrop-blur-xs text-gray-900 px-6 sm:px-8 py-3.5 text-xs font-bold tracking-widest hover:bg-gray-900 hover:text-white transition-colors flex items-center gap-2.5 uppercase rounded-xs group">
-                <span>OUR SOLUTIONS</span>
-                <ArrowRight
-                  size={14}
-                  className="group-hover:translate-x-1 transition-transform"
-                />
-              </button>
+              {[
+                { label: "EXPLORE PROJECTS", href: "/projects", primary: true },
+                { label: "OUR SOLUTIONS", href: "/services", primary: false },
+              ].map((action, idx) => (
+                <Link
+                  key={idx}
+                  href={action.href}
+                  className={`text-xs font-bold tracking-widest transition-all duration-300 flex items-center gap-2.5 uppercase rounded-xs group cursor-pointer px-6 sm:px-8 py-3.5 ${
+                    action.primary
+                      ? "bg-[#C5A26B] hover:bg-[#a68656] text-white shadow-md shadow-[#C5A26B]/20"
+                      : "border border-gray-900/30 bg-white/70 backdrop-blur-xs text-gray-900 hover:bg-gray-900 hover:text-white"
+                  }`}>
+                  <span>{action.label}</span>
+                  <ArrowRight
+                    size={14}
+                    className="group-hover:translate-x-1 transition-transform duration-300"
+                  />
+                </Link>
+              ))}
             </div>
           </div>
 
@@ -564,7 +570,6 @@ const VallavarLandingPage: React.FC = () => {
             WHAT OUR CLIENTS SAY
           </h2>
           <div className="relative px-12">
-
             <div className="flex flex-col items-center">
               <span className="text-[#C5A26B] font-serif text-6xl leading-none mb-4">
                 "
@@ -589,7 +594,6 @@ const VallavarLandingPage: React.FC = () => {
                 </div>
               </div>
             </div>
-
           </div>
 
           <div className="flex justify-center gap-2 mt-12">
