@@ -1,11 +1,28 @@
-import React from 'react';
-import Navbar from '../layout/Navbar'; // Adjust this path if necessary
-import Footer from '../layout/Footer'; // Adjust this path if necessary
-import { 
-  ChevronRight, ChevronLeft, ArrowRight, Phone,
-  Gem, PenTool, Layers, Clock, Leaf, Building2, Home, 
-  GraduationCap, Stethoscope, Hotel, Landmark, Church, ShoppingBag 
-} from 'lucide-react';
+import React from "react";
+import Navbar from "../layout/Navbar"; // Adjust this path if necessary
+import Footer from "../layout/Footer"; // Adjust this path if necessary
+import Image from "next/image";
+import {
+  ChevronRight,
+  ChevronLeft,
+  ArrowRight,
+  Phone,
+  Gem,
+  PenTool,
+  Layers,
+  Clock,
+  Leaf,
+  Building2,
+  Home,
+  GraduationCap,
+  Stethoscope,
+  Hotel,
+  Landmark,
+  Church,
+  ShoppingBag,
+  Award,
+  ShieldCheck,
+} from "lucide-react";
 
 const VallavarLandingPage: React.FC = () => {
   return (
@@ -14,64 +31,134 @@ const VallavarLandingPage: React.FC = () => {
       <div className="sr-only">
         <h1>Vallavar GRC - Best GRC in Chennai, Tamil Nadu</h1>
         <p>
-          Leading GRC manufacturer in Chennai providing premium Glass Fiber Reinforced Concrete (GRC) 
-          and GRP solutions. We are recognized as the best GRC in Chennai and best GRC in Tamil Nadu. 
-          Looking for chennai grc, grc in chennai, or grc chennai? Contact Vallavar GRC for premium architectural elements.
+          Leading GRC manufacturer in Chennai providing premium Glass Fiber
+          Reinforced Concrete (GRC) and GRP solutions. We are recognized as the
+          best GRC in Chennai and best GRC in Tamil Nadu. Looking for chennai
+          grc, grc in chennai, or grc chennai? Contact Vallavar GRC for premium
+          architectural elements.
         </p>
       </div>
 
       {/* --- INJECTED NAVBAR COMPONENT --- */}
       <Navbar />
 
-      {/* --- HERO SECTION --- */}
-      <header id="home" className="relative w-full min-h-screen md:h-screen md:min-h-[800px] flex items-center bg-black overflow-hidden pt-20 sm:pt-20 md:pt-15">
-        <div className="absolute inset-0 w-full h-full">
-          <img 
-            src="/images/image1.png" 
-            alt="Premium GRC building facade in Chennai" 
-            className="w-full h-full object-cover opacity-60"
+      <header
+        id="home"
+        className="relative w-full min-h-screen lg:h-screen lg:min-h-[850px] flex items-center bg-[#FAF9F6] overflow-hidden pt-24 pb-16 lg:py-0">
+        {/* --- BACKGROUND GRAPHIC ASSET --- */}
+        <div className="absolute inset-0 w-full h-full pointer-events-none">
+          <Image
+            src="/images/hero.svg" // Pointing to your optimized background file
+            alt="Vallalar GRC - Crafting Landmark Architecture"
+            fill
+            priority
+            className="object-cover object-right sm:object-center opacity-95"
+            sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-black/40 to-black/60"></div>
-        </div>
-        
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-8 items-end pb-20">
-          <div className="md:col-span-8">
-            <p className="text-[#C5A26B] text-xs font-bold tracking-[0.2em] mb-4 uppercase">
-              Premium GRC & GRP Architectural Solutions in Chennai
-            </p>
-            <h2 className="text-5xl md:text-7xl font-serif text-white leading-tight mb-6">
-              CRAFTING<br />LANDMARK<br />ARCHITECTURE.
-            </h2>
-            <p className="text-gray-300 max-w-xl text-sm md:text-base leading-relaxed mb-10">
-              We transform visionary concepts into iconic structures with precision-engineered 
-              GRC & GRP elements that define beauty, strength and timeless elegance. Widely regarded 
-              as the best GRC in Tamil Nadu.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-[#C5A26B] text-white px-8 py-4 text-sm font-bold tracking-wider hover:bg-[#a68656] transition-colors flex items-center gap-2">
-                EXPLORE PROJECTS <ArrowRight size={16} />
-              </button>
-              <button className="border border-white/30 text-white px-8 py-4 text-sm font-bold tracking-wider hover:bg-white/10 transition-colors flex items-center gap-2">
-                OUR SOLUTIONS <ArrowRight size={16} />
-              </button>
-            </div>
-          </div>
           
-          <div className="hidden md:flex md:col-span-4 flex-col items-end gap-4 pb-12">
-            <div className="border border-white/20 px-6 py-3 backdrop-blur-sm">
-              <p className="text-white text-xs tracking-widest font-semibold">SHAPING ELEVATIONS.</p>
-            </div>
-            <div className="border border-white/20 px-6 py-3 backdrop-blur-sm">
-              <p className="text-white text-xs tracking-widest font-semibold">DEFYING ORDINARY.</p>
-            </div>
-          </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#FAF9F6] via-[#FAF9F6]/40 to-transparent lg:hidden" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#FAF9F6]/90 via-[#FAF9F6]/60 to-transparent hidden lg:block" />
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-          <div className="w-6 h-10 border border-white/30 rounded-full flex justify-center p-1">
-            <div className="w-1 h-2 bg-[#C5A26B] rounded-full animate-bounce"></div>
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-between">
+          {/* Empty space filler for vertical alignment on desktop grid frameworks */}
+          <div className="hidden lg:block h-12" />
+
+          {/* --- MAIN HERO BODY LAYOUT --- */}
+          <div className="max-w-xl lg:max-w-2xl mt-12 sm:mt-16 lg:mt-0">
+            <p className="text-[#C5A26B] text-[10px] sm:text-xs font-bold tracking-[0.25em] mb-4 uppercase">
+              PREMIUM GRC & ARCHITECTURAL SOLUTIONS IN CHENNAI
+            </p>
+
+            <h1 className="text-4xl sm:text-6xl lg:text-[5rem] font-serif text-[#1A2B49] leading-[1.1] mb-6 font-medium tracking-wide">
+              CRAFTING
+              <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA7C11] via-[#C5A26B] to-[#AA7C11]">
+                LANDMARK
+              </span>
+              <br />
+              ARCHITECTURE.
+            </h1>
+
+            <p className="text-gray-700 text-xs sm:text-sm leading-relaxed max-w-md sm:max-w-xl mb-8 font-normal drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)]">
+              We transform visionary concepts into iconic structures with
+              precision-engineered GRC & GPD architectural solutions that bring
+              designs to life with timeless elegance, strength and
+              sustainability.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-[#C5A26B] hover:bg-[#a68656] text-white px-6 sm:px-8 py-3.5 text-xs font-bold tracking-widest transition-colors flex items-center gap-2.5 uppercase shadow-md shadow-[#C5A26B]/20 rounded-xs group">
+                <span>EXPLORE PROJECTS</span>
+                <ArrowRight
+                  size={14}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
+              </button>
+              <button className="border border-gray-900/30 bg-white/70 backdrop-blur-xs text-gray-900 px-6 sm:px-8 py-3.5 text-xs font-bold tracking-widest hover:bg-gray-900 hover:text-white transition-colors flex items-center gap-2.5 uppercase rounded-xs group">
+                <span>OUR SOLUTIONS</span>
+                <ArrowRight
+                  size={14}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
+              </button>
+            </div>
           </div>
-          <span className="text-[10px] text-white/50 tracking-widest uppercase">Scroll to explore</span>
+
+          {/* --- BOTTOM COMPONENTS SYSTEM --- */}
+          <div className="mt-16 lg:mt-12 space-y-8 w-full">
+            {/* FLOATING PILL KEY-VALUES CONTAINER */}
+            <div className="w-full bg-white/80 backdrop-blur-md border border-white/50 rounded-xl px-6 py-5 shadow-[0_10px_35px_rgba(0,0,0,0.04)] grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 items-center">
+              {[
+                {
+                  icon: <Gem size={16} />,
+                  title: "PREMIUM QUALITY",
+                  desc: "Built to Global Standards",
+                },
+                {
+                  icon: <Leaf size={16} />,
+                  title: "SUSTAINABLE",
+                  desc: "Eco-Friendly Solutions",
+                },
+                {
+                  icon: <Award size={16} />,
+                  title: "TIMELESS DESIGNS",
+                  desc: "Architecture with Legacy",
+                },
+                {
+                  icon: <ShieldCheck size={16} />,
+                  title: "BUILT TO LAST",
+                  desc: "Strength & Durability",
+                },
+              ].map((feature, idx) => (
+                <div
+                  key={idx}
+                  className="flex items-start gap-3 px-2 md:border-r last:border-0 border-gray-200/60">
+                  <div className="w-8 h-8 rounded-full bg-[#C5A26B]/10 flex items-center justify-center text-[#C5A26B] shrink-0 mt-0.5">
+                    {feature.icon}
+                  </div>
+                  <div>
+                    <h4 className="text-gray-900 text-[10px] font-bold tracking-wider uppercase mb-0.5">
+                      {feature.title}
+                    </h4>
+                    <p className="text-gray-500 text-[10px] font-medium font-sans">
+                      {feature.desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* LIGHT THEME MOUSE INTERACTION INDICATOR */}
+            <div className="flex flex-col items-center gap-1.5 justify-center">
+              <div className="w-5 h-8 border-2 border-gray-900/20 rounded-full flex justify-center p-1 bg-white/40 backdrop-blur-xs">
+                <div className="w-0.5 h-1.5 bg-[#C5A26B] rounded-full animate-bounce"></div>
+              </div>
+              <span className="text-[9px] text-gray-400 tracking-[0.2em] font-semibold uppercase">
+                Scroll to explore
+              </span>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -87,7 +174,9 @@ const VallavarLandingPage: React.FC = () => {
             <div className="text-xl font-bold font-serif">AMET</div>
             <div className="text-xl font-bold font-sans">ASHOK LEYLAND</div>
             <div className="text-xl font-bold font-sans">RAMKY</div>
-            <div className="text-xl font-bold font-sans">DLF BUILDING INDIA</div>
+            <div className="text-xl font-bold font-sans">
+              DLF BUILDING INDIA
+            </div>
           </div>
         </div>
       </section>
@@ -100,21 +189,25 @@ const VallavarLandingPage: React.FC = () => {
               About Vallavar GRC
             </p>
             <h2 className="text-4xl md:text-5xl font-serif text-white leading-tight mb-6">
-              ARCHITECTURE<br />BEYOND ORDINARY
+              ARCHITECTURE
+              <br />
+              BEYOND ORDINARY
             </h2>
             <p className="text-gray-400 leading-relaxed mb-8">
-              Vallavar GRC is a pioneer in delivering premium GRC & GRP architectural solutions for over a decade. 
-              As the leading experts for Glass Fiber Reinforced Concrete Chennai, from concept to completion, 
-              we partner with architects and builders to create structures that inspire generations.
+              Vallavar GRC is a pioneer in delivering premium GRC & GRP
+              architectural solutions for over a decade. As the leading experts
+              for Glass Fiber Reinforced Concrete Chennai, from concept to
+              completion, we partner with architects and builders to create
+              structures that inspire generations.
             </p>
             <button className="border border-[#C5A26B] text-[#C5A26B] px-8 py-4 text-sm font-bold tracking-wider hover:bg-[#C5A26B] hover:text-white transition-colors flex items-center gap-2">
               DISCOVER OUR STORY <ArrowRight size={16} />
             </button>
           </div>
           <div className="relative">
-            <img 
-              src="images/image6.svg" 
-              alt="Modern architectural villa featuring custom GRC elements in Chennai" 
+            <img
+              src="images/image6.svg"
+              alt="Modern architectural villa featuring custom GRC elements in Chennai"
               className="w-full h-auto rounded-mm shadow-2xl"
             />
             <div className="absolute -inset-4 border border-[#C5A26B]/30 rounded-sm -z-10 translate-x-4 translate-y-4 hidden md:block"></div>
@@ -133,36 +226,44 @@ const VallavarLandingPage: React.FC = () => {
               PREMIUM ARCHITECTURAL ELEMENTS
             </h2>
           </div>
-          
+
           <div className="flex items-center gap-4">
-            
             <div className="flex-1 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 overflow-hidden">
               {[
-                { title: 'GRC FACADES', img: 'images/image11.svg' },
-                { title: 'COLUMNS', img: 'images/image17.png' },
-                { title: 'CORNICES', img: 'images/image16.png' },
-                { title: 'DOMES', img: 'images/image15.png' },
-                { title: 'JAALIS', img: 'images/image12.svg' },
-                { title: 'DECORATIVE PANELS', img: 'images/image14.png' },
-                { title: 'GRP PRODUCTS', img: 'images/image13.png' },
-                { title: 'CUSTOM ELEMENTS', img: 'images/image18.png' },
+                { title: "GRC FACADES", img: "images/image11.svg" },
+                { title: "COLUMNS", img: "images/image17.png" },
+                { title: "CORNICES", img: "images/image16.png" },
+                { title: "DOMES", img: "images/image15.png" },
+                { title: "JAALIS", img: "images/image12.svg" },
+                { title: "DECORATIVE PANELS", img: "images/image14.png" },
+                { title: "GRP PRODUCTS", img: "images/image13.png" },
+                { title: "CUSTOM ELEMENTS", img: "images/image18.png" },
               ].map((item, idx) => (
-                <div key={idx} className="bg-white border border-gray-200 group cursor-pointer hover:shadow-xl transition-shadow">
+                <div
+                  key={idx}
+                  className="bg-white border border-gray-200 group cursor-pointer hover:shadow-xl transition-shadow">
                   <div className="h-40 overflow-hidden">
-                    <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
                   </div>
                   <div className="p-3 flex items-center justify-between">
-                    <h4 className="text-[10px] font-bold tracking-wider text-gray-800">{item.title}</h4>
+                    <h4 className="text-[10px] font-bold tracking-wider text-gray-800">
+                      {item.title}
+                    </h4>
                     <ArrowRight size={14} className="text-[#C5A26B]" />
                   </div>
                 </div>
               ))}
             </div>
-           
           </div>
-          
+
           <div className="text-center mt-12">
-            <a href="#services" className="inline-flex items-center gap-2 text-sm font-bold tracking-widest text-gray-800 hover:text-[#C5A26B] transition-colors uppercase">
+            <a
+              href="#services"
+              className="inline-flex items-center gap-2 text-sm font-bold tracking-widest text-gray-800 hover:text-[#C5A26B] transition-colors uppercase">
               View All Solutions <ArrowRight size={16} />
             </a>
           </div>
@@ -177,21 +278,47 @@ const VallavarLandingPage: React.FC = () => {
               Why Choose Vallavar
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-white leading-tight">
-              BUILT ON TRUST.<br />CRAFTED TO LAST.
+              BUILT ON TRUST.
+              <br />
+              CRAFTED TO LAST.
             </h2>
           </div>
           <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-5 gap-6">
             {[
-              { icon: <Gem size={32} className="mb-4 text-[#C5A26B]"/>, title: 'PREMIUM QUALITY', desc: 'International standards with meticulous quality control.' },
-              { icon: <PenTool size={32} className="mb-4 text-[#C5A26B]"/>, title: 'CUSTOM DESIGN', desc: 'Tailor-made solutions that bring your vision to life.' },
-              { icon: <Layers size={32} className="mb-4 text-[#C5A26B]"/>, title: 'END-TO-END SERVICE', desc: 'From design & manufacturing to delivery & installation.' },
-              { icon: <Clock size={32} className="mb-4 text-[#C5A26B]"/>, title: 'ON-TIME DELIVERY', desc: 'Advanced planning, precision execution, timely completion.' },
-              { icon: <Leaf size={32} className="mb-4 text-[#C5A26B]"/>, title: 'SUSTAINABLE', desc: 'Lightweight, durable and environmentally responsible.' },
+              {
+                icon: <Gem size={32} className="mb-4 text-[#C5A26B]" />,
+                title: "PREMIUM QUALITY",
+                desc: "International standards with meticulous quality control.",
+              },
+              {
+                icon: <PenTool size={32} className="mb-4 text-[#C5A26B]" />,
+                title: "CUSTOM DESIGN",
+                desc: "Tailor-made solutions that bring your vision to life.",
+              },
+              {
+                icon: <Layers size={32} className="mb-4 text-[#C5A26B]" />,
+                title: "END-TO-END SERVICE",
+                desc: "From design & manufacturing to delivery & installation.",
+              },
+              {
+                icon: <Clock size={32} className="mb-4 text-[#C5A26B]" />,
+                title: "ON-TIME DELIVERY",
+                desc: "Advanced planning, precision execution, timely completion.",
+              },
+              {
+                icon: <Leaf size={32} className="mb-4 text-[#C5A26B]" />,
+                title: "SUSTAINABLE",
+                desc: "Lightweight, durable and environmentally responsible.",
+              },
             ].map((feature, idx) => (
               <div key={idx} className="text-left">
                 {feature.icon}
-                <h4 className="text-white text-[11px] font-bold tracking-wider mb-2 uppercase">{feature.title}</h4>
-                <p className="text-gray-400 text-xs leading-relaxed">{feature.desc}</p>
+                <h4 className="text-white text-[11px] font-bold tracking-wider mb-2 uppercase">
+                  {feature.title}
+                </h4>
+                <p className="text-gray-400 text-xs leading-relaxed">
+                  {feature.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -211,42 +338,65 @@ const VallavarLandingPage: React.FC = () => {
           </div>
 
           <div className="w-full max-w-6xl mx-auto px-4 py-12 flex justify-center items-center">
-  {/* Adjusted columns to max out at 3 (grid-cols-3) to match the data count and center properly */}
-  <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-    {[
-      { title: 'ZOHO CORPORATE CAMPUS', loc: 'Chennai', img: 'images/zoho-logo-web.svg', isLogo: true },
-      { title: 'SRM UNIVERSITY BLOCK', loc: 'Chennai', img: 'images/srm-college.jpg', isLogo: false },
-      { title: 'DLF IT PARK', loc: 'Chennai', img: 'images/image19.jpeg', isLogo: false },
-    ].map((proj, idx) => (
-      <div 
-        key={idx} 
-        className="w-full max-w-[360px] bg-white border border-gray-100 group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
-      >
-        {/* Fixed image container sizing and added treatment for logos vs real photography */}
-        <div className="h-56 overflow-hidden flex items-center justify-center bg-gray-50 relative">
-          <img 
-            src={proj.img} 
-            alt={`${proj.title} - ${proj.loc}`} 
-            className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${
-              proj.isLogo ? 'object-contain p-6' : 'object-cover'
-            }`} 
-          />
-        </div>
-        
-        <div className="p-5 flex items-end justify-between border-t border-gray-50">
-          <div>
-            <h4 className="text-xs font-bold tracking-wider text-gray-900 mb-1">{proj.title}</h4>
-            <p className="text-[#C5A26B] text-[10px] italic">{proj.loc}</p>
+            {/* Adjusted columns to max out at 3 (grid-cols-3) to match the data count and center properly */}
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+              {[
+                {
+                  title: "ZOHO CORPORATE CAMPUS",
+                  loc: "Chennai",
+                  img: "images/zoho-logo-web.svg",
+                  isLogo: true,
+                },
+                {
+                  title: "SRM UNIVERSITY BLOCK",
+                  loc: "Chennai",
+                  img: "images/srm-college.jpg",
+                  isLogo: false,
+                },
+                {
+                  title: "DLF IT PARK",
+                  loc: "Chennai",
+                  img: "images/image19.jpeg",
+                  isLogo: false,
+                },
+              ].map((proj, idx) => (
+                <div
+                  key={idx}
+                  className="w-full max-w-[360px] bg-white border border-gray-100 group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                  {/* Fixed image container sizing and added treatment for logos vs real photography */}
+                  <div className="h-56 overflow-hidden flex items-center justify-center bg-gray-50 relative">
+                    <img
+                      src={proj.img}
+                      alt={`${proj.title} - ${proj.loc}`}
+                      className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${
+                        proj.isLogo ? "object-contain p-6" : "object-cover"
+                      }`}
+                    />
+                  </div>
+
+                  <div className="p-5 flex items-end justify-between border-t border-gray-50">
+                    <div>
+                      <h4 className="text-xs font-bold tracking-wider text-gray-900 mb-1">
+                        {proj.title}
+                      </h4>
+                      <p className="text-[#C5A26B] text-[10px] italic">
+                        {proj.loc}
+                      </p>
+                    </div>
+                    <ArrowRight
+                      size={16}
+                      className="text-gray-400 group-hover:text-[#C5A26B] group-hover:translate-x-1 transition-all"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-          <ArrowRight size={16} className="text-gray-400 group-hover:text-[#C5A26B] group-hover:translate-x-1 transition-all" />
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
 
           <div className="text-center mt-12">
-            <a href="#projects" className="inline-flex items-center gap-2 text-sm font-bold tracking-widest text-gray-800 hover:text-[#C5A26B] transition-colors uppercase">
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-2 text-sm font-bold tracking-widest text-gray-800 hover:text-[#C5A26B] transition-colors uppercase">
               View All Projects <ArrowRight size={16} />
             </a>
           </div>
@@ -261,28 +411,60 @@ const VallavarLandingPage: React.FC = () => {
               Our Process
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-white">
-              FROM CONCEPT<br />TO CREATION
+              FROM CONCEPT
+              <br />
+              TO CREATION
             </h2>
           </div>
 
           <div className="relative">
             <div className="absolute top-6 left-0 w-full h-px bg-white/20 hidden md:block z-0"></div>
-            
+
             <div className="grid grid-cols-2 md:grid-cols-6 gap-8 relative z-10">
               {[
-                { num: '01', title: 'CONSULTATION', desc: 'Understanding your vision and requirements.' },
-                { num: '02', title: 'DESIGN & ENGINEERING', desc: 'Creating precise designs with advanced technology.' },
-                { num: '03', title: 'MANUFACTURING', desc: 'High-quality production using advanced techniques.' },
-                { num: '04', title: 'QUALITY CHECK', desc: 'Rigorous inspection to ensure perfection in every detail.' },
-                { num: '05', title: 'DELIVERY & INSTALLATION', desc: 'Safe delivery and expert installation on-site.' },
-                { num: '06', title: 'PROJECT COMPLETION', desc: 'Delivering excellence that exceeds expectations.' },
+                {
+                  num: "01",
+                  title: "CONSULTATION",
+                  desc: "Understanding your vision and requirements.",
+                },
+                {
+                  num: "02",
+                  title: "DESIGN & ENGINEERING",
+                  desc: "Creating precise designs with advanced technology.",
+                },
+                {
+                  num: "03",
+                  title: "MANUFACTURING",
+                  desc: "High-quality production using advanced techniques.",
+                },
+                {
+                  num: "04",
+                  title: "QUALITY CHECK",
+                  desc: "Rigorous inspection to ensure perfection in every detail.",
+                },
+                {
+                  num: "05",
+                  title: "DELIVERY & INSTALLATION",
+                  desc: "Safe delivery and expert installation on-site.",
+                },
+                {
+                  num: "06",
+                  title: "PROJECT COMPLETION",
+                  desc: "Delivering excellence that exceeds expectations.",
+                },
               ].map((step, idx) => (
-                <div key={idx} className="flex flex-col md:items-center md:text-center">
+                <div
+                  key={idx}
+                  className="flex flex-col md:items-center md:text-center">
                   <div className="w-12 h-12 rounded-full border border-[#C5A26B] bg-[#181818] flex items-center justify-center text-[#C5A26B] text-sm font-serif mb-6 mx-0 md:mx-auto">
                     {step.num}
                   </div>
-                  <h4 className="text-white text-[10px] font-bold tracking-wider mb-2 uppercase">{step.title}</h4>
-                  <p className="text-gray-400 text-[10px] leading-relaxed max-w-[140px]">{step.desc}</p>
+                  <h4 className="text-white text-[10px] font-bold tracking-wider mb-2 uppercase">
+                    {step.title}
+                  </h4>
+                  <p className="text-gray-400 text-[10px] leading-relaxed max-w-[140px]">
+                    {step.desc}
+                  </p>
                 </div>
               ))}
             </div>
@@ -291,28 +473,55 @@ const VallavarLandingPage: React.FC = () => {
       </section>
 
       {/* --- INDUSTRIES WE SERVE --- */}
-      <section id="industries" className="py-24 bg-white border-b border-gray-100">
+      <section
+        id="industries"
+        className="py-24 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-2xl font-serif text-gray-900 flex items-center justify-center gap-4 before:h-px before:w-12 before:bg-gray-300 after:h-px after:w-12 after:bg-gray-300 tracking-widest uppercase">
               Industries We Serve
             </h2>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
             {[
-              { icon: <Building2 size={32} strokeWidth={1} />, label: 'COMMERCIAL BUILDINGS' },
-              { icon: <Home size={32} strokeWidth={1} />, label: 'LUXURY VILLAS' },
-              { icon: <GraduationCap size={32} strokeWidth={1} />, label: 'EDUCATIONAL INSTITUTIONS' },
-              { icon: <Stethoscope size={32} strokeWidth={1} />, label: 'HOSPITALS' },
-              { icon: <Hotel size={32} strokeWidth={1} />, label: 'HOTELS' },
-              { icon: <Landmark size={32} strokeWidth={1} />, label: 'GOVERNMENT PROJECTS' },
-              { icon: <Church size={32} strokeWidth={1} />, label: 'RELIGIOUS BUILDINGS' },
-              { icon: <ShoppingBag size={32} strokeWidth={1} />, label: 'SHOPPING COMPLEXES' },
+              {
+                icon: <Building2 size={32} strokeWidth={1} />,
+                label: "COMMERCIAL BUILDINGS",
+              },
+              {
+                icon: <Home size={32} strokeWidth={1} />,
+                label: "LUXURY VILLAS",
+              },
+              {
+                icon: <GraduationCap size={32} strokeWidth={1} />,
+                label: "EDUCATIONAL INSTITUTIONS",
+              },
+              {
+                icon: <Stethoscope size={32} strokeWidth={1} />,
+                label: "HOSPITALS",
+              },
+              { icon: <Hotel size={32} strokeWidth={1} />, label: "HOTELS" },
+              {
+                icon: <Landmark size={32} strokeWidth={1} />,
+                label: "GOVERNMENT PROJECTS",
+              },
+              {
+                icon: <Church size={32} strokeWidth={1} />,
+                label: "RELIGIOUS BUILDINGS",
+              },
+              {
+                icon: <ShoppingBag size={32} strokeWidth={1} />,
+                label: "SHOPPING COMPLEXES",
+              },
             ].map((ind, idx) => (
-              <div key={idx} className="border border-gray-200 aspect-square flex flex-col items-center justify-center p-4 hover:border-[#C5A26B] hover:shadow-lg transition-all group cursor-pointer text-gray-600 hover:text-[#C5A26B]">
+              <div
+                key={idx}
+                className="border border-gray-200 aspect-square flex flex-col items-center justify-center p-4 hover:border-[#C5A26B] hover:shadow-lg transition-all group cursor-pointer text-gray-600 hover:text-[#C5A26B]">
                 <div className="mb-4">{ind.icon}</div>
-                <h4 className="text-[9px] font-bold tracking-wider text-center uppercase text-gray-800">{ind.label}</h4>
+                <h4 className="text-[9px] font-bold tracking-wider text-center uppercase text-gray-800">
+                  {ind.label}
+                </h4>
               </div>
             ))}
           </div>
@@ -322,19 +531,27 @@ const VallavarLandingPage: React.FC = () => {
       {/* --- STATS SECTION --- */}
       <section className="relative py-20 bg-black overflow-hidden">
         <div className="absolute inset-0">
-          <img src="image_f13ff7.jpg" alt="Background" className="w-full h-full object-cover opacity-20" />
+          <img
+            src="image_f13ff7.jpg"
+            alt="Background"
+            className="w-full h-full object-cover opacity-20"
+          />
           <div className="absolute inset-0 bg-black/80"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 divide-y md:divide-y-0 md:divide-x divide-white/20 text-center">
           {[
-            { num: '15+', label: 'YEARS OF EXPERIENCE' },
-            { num: '500+', label: 'PROJECTS COMPLETED' },
-            { num: '100+', label: 'EXPERT PROFESSIONALS' },
-            { num: '100%', label: 'CLIENT SATISFACTION' },
+            { num: "15+", label: "YEARS OF EXPERIENCE" },
+            { num: "500+", label: "PROJECTS COMPLETED" },
+            { num: "100+", label: "EXPERT PROFESSIONALS" },
+            { num: "100%", label: "CLIENT SATISFACTION" },
           ].map((stat, idx) => (
             <div key={idx} className="py-6 md:py-0">
-              <div className="text-4xl md:text-5xl font-serif text-[#C5A26B] mb-2">{stat.num}</div>
-              <div className="text-[10px] font-bold tracking-widest text-white uppercase">{stat.label}</div>
+              <div className="text-4xl md:text-5xl font-serif text-[#C5A26B] mb-2">
+                {stat.num}
+              </div>
+              <div className="text-[10px] font-bold tracking-widest text-white uppercase">
+                {stat.label}
+              </div>
             </div>
           ))}
         </div>
@@ -347,29 +564,44 @@ const VallavarLandingPage: React.FC = () => {
             WHAT OUR CLIENTS SAY
           </h2>
           <div className="relative px-12">
-            <button className="absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-gray-300 text-gray-500 hover:bg-[#C5A26B] hover:text-white transition-colors" aria-label="Previous Testimonial">
+            <button
+              className="absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-gray-300 text-gray-500 hover:bg-[#C5A26B] hover:text-white transition-colors"
+              aria-label="Previous Testimonial">
               <ChevronLeft size={20} />
             </button>
-            
+
             <div className="flex flex-col items-center">
-              <span className="text-[#C5A26B] font-serif text-6xl leading-none mb-4">"</span>
+              <span className="text-[#C5A26B] font-serif text-6xl leading-none mb-4">
+                "
+              </span>
               <p className="text-xl md:text-2xl text-gray-800 font-serif italic mb-10 leading-relaxed">
-                Vallavar GRC's attention to detail and commitment to quality has elevated the architectural beauty of our projects.
+                Vallavar GRC's attention to detail and commitment to quality has
+                elevated the architectural beauty of our projects.
               </p>
               <div className="flex items-center gap-4">
-                <img src="/api/placeholder/60/60" alt="Ar. Ramesh Krishnan" className="w-12 h-12 rounded-full object-cover grayscale" />
+                <img
+                  src="/api/placeholder/60/60"
+                  alt="Ar. Ramesh Krishnan"
+                  className="w-12 h-12 rounded-full object-cover grayscale"
+                />
                 <div className="text-left">
-                  <h4 className="text-sm font-bold text-gray-900">— Ar. Ramesh Krishnan</h4>
-                  <p className="text-xs text-gray-500">Principal Architect, RKA Architecture</p>
+                  <h4 className="text-sm font-bold text-gray-900">
+                    — Ar. Ramesh Krishnan
+                  </h4>
+                  <p className="text-xs text-gray-500">
+                    Principal Architect, RKA Architecture
+                  </p>
                 </div>
               </div>
             </div>
 
-            <button className="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-gray-300 text-gray-500 hover:bg-[#C5A26B] hover:text-white transition-colors" aria-label="Next Testimonial">
+            <button
+              className="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-full border border-gray-300 text-gray-500 hover:bg-[#C5A26B] hover:text-white transition-colors"
+              aria-label="Next Testimonial">
               <ChevronRight size={20} />
             </button>
           </div>
-          
+
           <div className="flex justify-center gap-2 mt-12">
             <div className="w-2 h-2 rounded-full bg-[#C5A26B]"></div>
             <div className="w-2 h-2 rounded-full bg-gray-300"></div>
@@ -379,14 +611,19 @@ const VallavarLandingPage: React.FC = () => {
       </section>
 
       {/* --- CTA SECTION --- */}
-      <section id="contact" className="py-16 bg-[#181818] border-b border-white/10">
+      <section
+        id="contact"
+        className="py-16 bg-[#181818] border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
             <h2 className="text-2xl md:text-3xl font-serif text-white mb-2">
-              LET'S CREATE SOMETHING<br />EXTRAORDINARY TOGETHER
+              LET'S CREATE SOMETHING
+              <br />
+              EXTRAORDINARY TOGETHER
             </h2>
             <p className="text-gray-400 text-sm max-w-md">
-              Partner with Vallavar GRC for premium architectural solutions that stand the test of time.
+              Partner with Vallavar GRC for premium architectural solutions that
+              stand the test of time.
             </p>
           </div>
           <div className="flex gap-4 flex-wrap">
@@ -402,7 +639,6 @@ const VallavarLandingPage: React.FC = () => {
 
       {/* --- INJECTED FOOTER COMPONENT --- */}
       <Footer />
-      
     </div>
   );
 };

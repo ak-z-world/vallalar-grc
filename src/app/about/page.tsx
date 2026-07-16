@@ -200,10 +200,10 @@ export default function AboutPage() {
           </div>
           <div className="xl:col-span-9 grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { title: "Advanced Manufacturing", img: "/api/placeholder/300/300" },
-              { title: "Precision Molding", img: "/api/placeholder/300/300" },
-              { title: "Quality Control Lab", img: "/api/placeholder/300/300" },
-              { title: "Expert Craftsmanship", img: "/api/placeholder/300/300" }
+              { title: "Advanced Manufacturing", img: "/images/image26.png" },
+              { title: "Precision Molding", img: "/images/image26.png" },
+              { title: "Quality Control Lab", img: "/images/image28.png" },
+              { title: "Expert Craftsmanship", img: "/images/image27.png" }
             ].map((item, idx) => (
               <div key={idx} className="group relative aspect-square overflow-hidden bg-gray-800">
                 <Image

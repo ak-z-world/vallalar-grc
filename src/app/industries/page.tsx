@@ -18,49 +18,49 @@ const INDUSTRIES_DATA = [
     title: "Luxury Villas",
     desc: "Bespoke architectural elements that elevate luxury living with timeless elegance and flawless detailing.",
     icon: <Home size={18} className="text-[#C5A26B]" />,
-    img: "/images/image21.png" // Reusing available real-world building/interior column asset
+    img: "/images/ind1.svg" // Reusing available real-world building/interior column asset
   },
   {
     title: "Commercial Buildings",
     desc: "High-performance façade and decorative solutions that create iconic commercial spaces.",
     icon: <Building2 size={18} className="text-[#C5A26B]" />,
-    img: "/images/image24.png" // Mapping to image_2a8e53.jpg featuring modern commercial screen facade
+    img: "/images/ind2.svg" // Mapping to image_2a8e53.jpg featuring modern commercial screen facade
   },
   {
     title: "Educational Institutions",
     desc: "Durable and elegant architectural elements that inspire learning environments for generations.",
     icon: <GraduationCap size={18} className="text-[#C5A26B]" />,
-    img: "/api/placeholder/500/380"
+    img: "/images/ind6.svg"
   },
   {
     title: "Hospitals",
     desc: "Hygienic, durable, and aesthetically pleasing solutions for modern healthcare facilities.",
     icon: <Stethoscope size={18} className="text-[#C5A26B]" />,
-    img: "/api/placeholder/500/380"
+    img: "/images/ind4.svg"
   },
   {
     title: "Hotels",
     desc: "Premium architectural designs that create memorable guest experiences and stand out.",
     icon: <Hotel size={18} className="text-[#C5A26B]" />,
-    img: "/api/placeholder/500/380"
+    img: "/images/ind5.svg"
   },
   {
     title: "Government Projects",
     desc: "Reliable, long-lasting, and majestic solutions for public infrastructure and civic spaces.",
     icon: <Landmark size={18} className="text-[#C5A26B]" />,
-    img: "/api/placeholder/500/380"
+    img: "/images/ind6.svg"
   },
   {
     title: "Religious Buildings",
     desc: "Intricate and spiritual architectural elements crafted with precision and devotion.",
     icon: <Church size={18} className="text-[#C5A26B]" />,
-    img: "/images/image22.png" // Mapping to intricate screen/jaali asset
+    img: "/images/ind7.svg" // Mapping to intricate screen/jaali asset
   },
   {
     title: "Shopping Complexes",
     desc: "Beautiful, durable, and lightweight solutions that enhance retail and visitor experiences.",
     icon: <ShoppingBag size={18} className="text-[#C5A26B]" />,
-    img: "/api/placeholder/500/380"
+    img: "/images/ind8.svg"
   }
 ];
 

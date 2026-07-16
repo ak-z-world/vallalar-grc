@@ -79,49 +79,49 @@ export default function ServicesPage() {
                 title: 'GRC FACADES', 
                 desc: 'High-performance facades that elevate aesthetics and deliver long-lasting durability.', 
                 icon: <Building2 size={20} strokeWidth={1.5} />,
-                img: '/api/placeholder/400/300' 
+                img: '/images/image29.png' 
               },
               { 
                 title: 'COLUMNS', 
                 desc: 'Elegant GRC columns that add grandeur and strength to every architectural style.', 
                 icon: <Columns size={20} strokeWidth={1.5} />,
-                img: '/api/placeholder/400/300' 
+                img: '/images/image30.png' 
               },
               { 
                 title: 'CORNICES', 
                 desc: 'Precision-crafted cornices that bring refinement and character to structures.', 
                 icon: <Landmark size={20} strokeWidth={1.5} />,
-                img: '/api/placeholder/400/300' 
+                img: '/images/image31.png' 
               },
               { 
                 title: 'DOMES', 
                 desc: 'Lightweight yet strong domes that create iconic silhouettes and timeless appeal.', 
                 icon: <Box size={20} strokeWidth={1.5} />,
-                img: '/api/placeholder/400/300' 
+                img: '/images/image15.png' 
               },
               { 
                 title: 'JAALIS', 
                 desc: 'Intricate GRC jaalis that blend traditional craftsmanship with modern precision.', 
                 icon: <Grid3X3 size={20} strokeWidth={1.5} />,
-                img: '/images/image22.png' // Using your image_299d5a.jpg
+                img: '/images/image14.png' // Using your image_299d5a.jpg
               },
               { 
                 title: 'DECORATIVE PANELS', 
                 desc: 'Custom decorative panels that transform ordinary spaces into architectural masterpieces.', 
                 icon: <Shapes size={20} strokeWidth={1.5} />,
-                img: '/api/placeholder/400/300' 
+                img: '/images/image13.png' 
               },
               { 
                 title: 'GRP PRODUCTS', 
                 desc: 'Advanced GRP solutions for lightweight, corrosion-resistant and high-performance needs.', 
                 icon: <Hexagon size={20} strokeWidth={1.5} />,
-                img: '/api/placeholder/400/300' 
+                img: '/images/image18.png' 
               },
               { 
                 title: 'CUSTOM ARCHITECTURAL ELEMENTS', 
                 desc: 'Bespoke GRC & GRP elements designed to bring your unique vision to life.', 
                 icon: <PenTool size={20} strokeWidth={1.5} />,
-                img: '/api/placeholder/400/300' 
+                img: '/images/image32.png' 
               },
             ].map((service, idx) => (
               <div key={idx} className="bg-white group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full">

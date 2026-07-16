@@ -197,12 +197,12 @@ const ProjectsPage = () => {
         </div>
 
         {/* Interactive Load More Handle */}
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <button className="inline-flex items-center gap-2 text-[11px] font-bold tracking-widest text-gray-500 hover:text-gray-900 bg-white border border-gray-200/80 hover:border-gray-400 px-6 py-3.5 rounded-xs transition-all duration-300 shadow-xs uppercase">
             <span>Load More Projects</span>
             <ChevronDown size={14} strokeWidth={2.5} className="animate-bounce" />
           </button>
-        </div>
+        </div> */}
       </section>
 
       {/* --- PRE-FOOTER LIGHTWEIGHT CTA SECTION --- */}
