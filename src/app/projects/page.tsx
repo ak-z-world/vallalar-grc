@@ -30,20 +30,29 @@ const PROJECTS_DATA = [
   },
   {
     id: 2,
-    title: "SRM University Administrative Block",
+    title: "SRM School of Law",
     location: "Chennai, Tamil Nadu",
     category: "institutional",
     tag: "INSTITUTIONAL",
-    img: "/images/image21.png", // Reusing established elegant structural pillars asset
+    img: "/images/srm-college.jpeg", // Reusing established elegant structural pillars asset
     gridClass: "col-span-1 md:col-span-1 lg:col-span-4 h-[320px] md:h-[400px]"
   },
   {
     id: 3,
-    title: "DLF IT Park",
+    title: "VBJ",
     location: "Chennai, Tamil Nadu",
     category: "commercial",
     tag: "COMMERCIAL",
-    img: "/images/image23.png", // Map to image_29b498.jpg / project asset
+    img: "/images/vbj.jpeg", // Map to image_29b498.jpg / project asset
+    gridClass: "col-span-1 md:col-span-1 lg:col-span-3 h-[320px] md:h-[400px] lg:h-[500px] lg:-mt-24 z-10"
+  },
+  {
+    id: 4,
+    title: "Paramount Mill",
+    location: "Madurai, Tamil Nadu",
+    category: "commercial",
+    tag: "COMMERCIAL",
+    img: "/images/image19.png", // Map to image_29b498.jpg / project asset
     gridClass: "col-span-1 md:col-span-1 lg:col-span-3 h-[320px] md:h-[400px] lg:h-[500px] lg:-mt-24 z-10"
   },
   

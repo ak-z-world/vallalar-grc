@@ -177,11 +177,11 @@ const VallavarLandingPage: React.FC = () => {
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
             <div className="text-xl font-black font-sans">ZOHO</div>
             <div className="text-xl font-bold font-serif">SRM</div>
-            <div className="text-xl font-bold font-serif">AMET</div>
-            <div className="text-xl font-bold font-sans">ASHOK LEYLAND</div>
-            <div className="text-xl font-bold font-sans">RAMKY</div>
+            <div className="text-xl font-bold font-serif">VBJ</div>
+            <div className="text-xl font-bold font-sans">PARAMOUNT MILL</div>
+            <div className="text-xl font-bold font-sans">NPR MAHAL</div>
             <div className="text-xl font-bold font-sans">
-              DLF BUILDING INDIA
+              RPP INFRA
             </div>
           </div>
         </div>
@@ -356,12 +356,18 @@ const VallavarLandingPage: React.FC = () => {
                 {
                   title: "SRM UNIVERSITY BLOCK",
                   loc: "Chennai",
-                  img: "images/srm-college.jpg",
+                  img: "images/srm-college.jpeg",
                   isLogo: false,
                 },
                 {
-                  title: "DLF IT PARK",
+                  title: "VBJ",
                   loc: "Chennai",
+                  img: "images/vbj.jpeg",
+                  isLogo: false,
+                },
+                {
+                  title: "Paramount mills",
+                  loc: "Madurai",
                   img: "images/image19.jpeg",
                   isLogo: false,
                 },
