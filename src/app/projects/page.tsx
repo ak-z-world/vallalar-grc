@@ -25,7 +25,7 @@ const PROJECTS_DATA = [
     location: "Chennai, Tamil Nadu",
     category: "commercial",
     tag: "COMMERCIAL",
-    img: "/images/image20.png", // Reusing existing landmark structural image
+    img: "/images/zoho-logo-web.svg", // Reusing existing landmark structural image
     gridClass: "col-span-1 md:col-span-2 lg:col-span-5 h-[320px] md:h-[400px]"
   },
   {
@@ -52,7 +52,7 @@ const PROJECTS_DATA = [
     location: "Madurai, Tamil Nadu",
     category: "commercial",
     tag: "COMMERCIAL",
-    img: "/images/image19.png", // Map to image_29b498.jpg / project asset
+    img: "/images/image19.jpeg", // Map to image_29b498.jpg / project asset
     gridClass: "col-span-1 md:col-span-1 lg:col-span-3 h-[320px] md:h-[400px] lg:h-[500px] lg:-mt-24 z-10"
   },
   
