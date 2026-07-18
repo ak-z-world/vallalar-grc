@@ -173,13 +173,6 @@ export default function ServicesPage() {
                   <p className="text-gray-500 text-xs leading-relaxed mb-6 flex-grow">
                     {service.desc}
                   </p>
-                  <div className="flex items-center justify-between text-[#C5A26B] font-bold text-[10px] tracking-widest uppercase">
-                    <span>EXPLORE</span>
-                    <ArrowRight
-                      size={14}
-                      className="group-hover:translate-x-1 transition-transform"
-                    />
-                  </div>
                 </div>
               </div>
             ))}
