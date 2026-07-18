@@ -15,6 +15,7 @@ import {
   Truck,
   Award,
 } from "lucide-react";
+import Link from 'next/link';
 
 export const metadata = {
   title: "Manufacturing Process | Vallalar GRC - Precision Engineering",
@@ -361,7 +362,6 @@ export default function ManufacturingPage() {
         </div>
       </section>
 
-
       {/* --- PRE-FOOTER LIGHTWEIGHT CTA SECTION --- */}
       <section className="bg-[#141A18] py-16 sm:py-20 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none hidden md:block">
@@ -390,13 +390,11 @@ export default function ManufacturingPage() {
               Partner with Vallalar GRC for precision-engineered architectural
               solutions that stand the test of time.
             </p>
-            <button className="group bg-[#C5A26B] hover:bg-[#a68656] text-white px-8 py-4 text-xs font-bold tracking-widest transition-all duration-300 flex items-center justify-center gap-3 uppercase rounded-xs whitespace-nowrap shrink-0 shadow-lg shadow-black/20">
-              <span>DISCUSS YOUR PROJECT</span>
-              <ArrowRight
-                size={14}
-                className="group-hover:translate-x-1 transition-transform"
-              />
-            </button>
+            <Link
+              href="/contact"
+              className="bg-[#C5A26B] text-white px-8 py-4 text-xs font-bold tracking-wider hover:bg-[#a68656] transition-colors flex items-center gap-2 uppercase">
+              DISCUSS YOUR PROJECT <ArrowRight size={16} />
+            </Link>
           </div>
         </div>
       </section>

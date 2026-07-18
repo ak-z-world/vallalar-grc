@@ -5,6 +5,7 @@ import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { ArrowRight, SlidersHorizontal, ChevronDown } from "lucide-react";
+import Link from "next/link";
 
 // Static configuration configurations safely separated outside the component re-render pipeline
 const CATEGORIES = [
@@ -259,14 +260,17 @@ const ProjectsPage = () => {
 
       {/* --- PRE-FOOTER INQUIRY CTA CONTAINER --- */}
       <section className="bg-white border-t border-gray-100 py-16 sm:py-20 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-full md:w-1/2 h-full opacity-5 pointer-events-none hidden md:block">
+        {/* Dynamic Architectural Background Layer Matrix */}
+        <div className="absolute inset-y-0 right-0 w-full md:w-[60%] opacity-25 pointer-events-none hidden md:block z-0">
           <Image
             src="/images/image24.png"
             alt="Structural background profile matrix"
             fill
-            className="object-cover object-right"
-            sizes="50vw"
+            className="object-cover object-right-bottom"
+            sizes="60vw"
           />
+          {/* Soft horizontal gradient fade matching the Figma UI wash effect */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/40 to-transparent" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 relative z-10">
@@ -283,13 +287,11 @@ const ProjectsPage = () => {
             </p>
           </div>
 
-          <button className="group border border-gray-900 hover:border-[#C5A26B] hover:bg-[#C5A26B] text-gray-900 hover:text-white px-8 py-4 text-xs font-bold tracking-widest transition-all duration-300 flex items-center gap-3 uppercase rounded-xs shrink-0">
-            <span>GET IN TOUCH</span>
-            <ArrowRight
-              size={14}
-              className="group-hover:translate-x-1 transition-transform"
-            />
-          </button>
+          <Link
+            href="/contact"
+            className="bg-[#C5A26B] text-white px-8 py-4 text-xs font-bold tracking-wider hover:bg-[#a68656] transition-colors flex items-center gap-2 uppercase">
+            GET IN TOUCH <ArrowRight size={16} />
+          </Link>
         </div>
       </section>
 
