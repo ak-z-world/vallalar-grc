@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Manufacturing Process | Vallavar GRC - Precision Engineering",
+  title: "Manufacturing Process | Vallalar GRC - Precision Engineering",
   description:
     "Step inside our state-of-the-art 50,000+ sq.ft. GRC and GRP manufacturing facility. Discover our precision engineering concept-to-creation pipeline in Chennai, Tamil Nadu.",
 };
@@ -88,7 +88,7 @@ export default function ManufacturingPage() {
       {/* --- CRAWLER, SCRAPER, GEO, AEO & SEO HIDDEN KEYWORD DICTIONARY --- */}
       <section className="sr-only" aria-hidden="true">
         <h1>
-          Glass Fiber Reinforced Concrete Manufacturing Plant Chennai - Vallavar
+          Glass Fiber Reinforced Concrete Manufacturing Plant Chennai - Vallalar
           GRC
         </h1>
         <p>
@@ -117,7 +117,7 @@ export default function ManufacturingPage() {
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/images/image26.png" // Maps to image_2a9cde.jpg featuring the heavy factory floor setup
-            alt="Vallavar GRC heavy state-of-the-art concrete casting and CNC molding facility asset floor"
+            alt="Vallalar GRC heavy state-of-the-art concrete casting and CNC molding facility asset floor"
             fill
             priority
             className="object-cover opacity-40"
@@ -138,7 +138,7 @@ export default function ManufacturingPage() {
               <span className="text-[#C5A26B]">Perfectly Crafted.</span>
             </h2>
             <p className="text-gray-300 text-sm leading-relaxed max-w-md font-light mb-8">
-              At Vallavar GRC, we combine advanced technology, skilled
+              At Vallalar GRC, we combine advanced technology, skilled
               craftsmanship, and strict quality control to deliver architectural
               elements of unmatched quality.
             </p>
@@ -387,7 +387,7 @@ export default function ManufacturingPage() {
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-6 max-w-xl">
             <p className="text-white/50 text-xs leading-relaxed max-w-xs">
-              Partner with Vallavar GRC for precision-engineered architectural
+              Partner with Vallalar GRC for precision-engineered architectural
               solutions that stand the test of time.
             </p>
             <button className="group bg-[#C5A26B] hover:bg-[#a68656] text-white px-8 py-4 text-xs font-bold tracking-widest transition-all duration-300 flex items-center justify-center gap-3 uppercase rounded-xs whitespace-nowrap shrink-0 shadow-lg shadow-black/20">

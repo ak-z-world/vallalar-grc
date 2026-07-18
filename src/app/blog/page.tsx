@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Page Not Found | Vallavar GRC',
+  title: 'Page Not Found | Vallalar GRC',
   description: "Looks like this page wasn't built. The page you're looking for may have been moved, renamed, or never existed.",
 };
 
@@ -31,7 +31,7 @@ export default function NotFound() {
           <div className="col-span-1 lg:col-span-8 relative h-full w-full opacity-15 lg:opacity-100">
             <Image 
               src="/images/image25.png" // Save your image_2b0df5.jpg background asset inside public/images/
-              alt="Vallavar GRC premier architectural majestic structure layout backdrop" 
+              alt="Vallalar GRC premier architectural majestic structure layout backdrop" 
               fill
               priority
               className="object-cover object-right-bottom mix-blend-multiply lg:mix-blend-normal"

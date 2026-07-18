@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="space-y-4 sm:space-y-6 flex flex-col items-center sm:items-start text-center sm:text-left">
           <div className="text-2xl font-serif text-white tracking-widest flex items-center">
             <span className="text-[#C5A26B] text-3xl mr-1">V</span> 
-            VALLAVAR 
+            VALLALAR 
             <span className="text-xs ml-2 text-[#C5A26B] font-sans mt-2">GRC</span>
           </div>
           <p className="text-xs leading-relaxed max-w-xs text-white/60">
@@ -88,7 +88,7 @@ const Footer = () => {
                 No. 258/18, JEYENDERA SARASWATHI NAGAR,<br/>
                 GUDUVANCHERY,<br/>
                 CHENNAI - 603202, TAMIL NADU, INDIA<br/>
-                <span className="text-white/40 italic text-[11px]">(Also Serving Chennai GRC Markets)</span>
+                <span className="text-white/40 italic text-[11px]">(Serving All Over Tamil Nadu, Andhra, Kerala)</span>
               </span>
             </li>
             <li className="flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3">
@@ -97,7 +97,7 @@ const Footer = () => {
             </li>
             <li className="flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3">
               <Mail size={16} className="text-[#C5A26B] shrink-0" />
-              <a href="mailto:info@vallavargrc.com" className="hover:text-[#C5A26B] transition-colors">info@vallavargrc.com</a>
+              <a href="mailto:info@vallalargrc.com" className="hover:text-[#C5A26B] transition-colors">info@vallalargrc.com</a>
             </li>
           </ul>
           <button className="bg-[#C5A26B] text-white px-6 py-3 text-[10px] font-bold tracking-wider hover:bg-[#a68656] transition-colors duration-300 flex items-center gap-2 uppercase w-full justify-center shadow-lg shadow-black/20 rounded-sm">
@@ -109,7 +109,7 @@ const Footer = () => {
       {/* Footer Bottom Bar */}
       <div className="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col lg:flex-row justify-between items-center gap-6 text-[10px] text-white/50 tracking-wider text-center lg:text-left">
         
-        <p className="order-2 lg:order-1">© {currentYear} Vallavar GRC. All Rights Reserved.</p>
+        <p className="order-2 lg:order-1">© {currentYear} Vallalar GRC. All Rights Reserved.</p>
         
         {/* REDESIGNED AGENCY ATTRIBUTION BADGE */}
         <div className="order-1 lg:order-2 flex items-center justify-center">

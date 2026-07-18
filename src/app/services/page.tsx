@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Our Services & Products | Vallavar GRC - Chennai',
+  title: 'Our Services & Products | Vallalar GRC - Chennai',
   description: 'Explore our premium GRC and GRP architectural solutions including facades, columns, cornices, domes, and jaalis in Chennai and Tamil Nadu.',
 };
 
@@ -22,10 +22,10 @@ export default function ServicesPage() {
       <div className="sr-only">
         <h1>Premium GRC Services & Architectural Elements in Chennai</h1>
         <p>
-          Discover the finest Glass Fiber Reinforced Concrete (GRC) and Glass Reinforced Plastic (GRP) solutions at Vallavar GRC. 
+          Discover the finest Glass Fiber Reinforced Concrete (GRC) and Glass Reinforced Plastic (GRP) solutions at Vallalar GRC. 
           We are recognized as the best GRC in Chennai and a leading manufacturer in Tamil Nadu. Our services include manufacturing and installing 
           chennai grc facades, GRC columns, elegant cornices, lightweight domes, intricate GRC jaalis, and custom decorative panels. 
-          If you are searching for 'grc in chennai', 'grc chennai', or 'best grc in tamil nadu', Vallavar GRC is your ultimate destination 
+          If you are searching for 'grc in chennai', 'grc chennai', or 'best grc in tamil nadu', Vallalar GRC is your ultimate destination 
           for high-performance, weather-resistant, and aesthetically superior architectural elements. Serving Chennai, Chennai, and all of South India.
         </p>
       </div>
@@ -259,7 +259,7 @@ export default function ServicesPage() {
           </div>
           <div className="flex flex-col items-start md:items-end gap-6 text-left md:text-right border-l-0 md:border-l border-white/10 pl-0 md:pl-10">
              <p className="text-gray-400 text-sm max-w-sm leading-relaxed">
-              Partner with Vallavar GRC for premium architectural solutions that stand the test of time.
+              Partner with Vallalar GRC for premium architectural solutions that stand the test of time.
             </p>
             <button className="bg-[#C5A26B] text-white px-8 py-4 text-[10px] font-bold tracking-widest hover:bg-[#a68656] transition-colors flex items-center gap-2 uppercase">
               GET IN TOUCH <ArrowRight size={14} />

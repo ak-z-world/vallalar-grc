@@ -26,16 +26,42 @@ import {
 import Link from "next/link";
 
 const VallavarLandingPage: React.FC = () => {
+  const projects = [
+    {
+      title: "ZOHO CORPORATE CAMPUS",
+      loc: "Chennai",
+      img: "images/zoho-logo-web.svg",
+      isLogo: true,
+    },
+    {
+      title: "SRM UNIVERSITY BLOCK",
+      loc: "Chennai",
+      img: "images/srm-college.jpeg",
+      isLogo: false,
+    },
+    {
+      title: "VBJ",
+      loc: "Chennai",
+      img: "images/vbj.jpeg",
+      isLogo: false,
+    },
+    {
+      title: "Paramount mills",
+      loc: "Madurai",
+      img: "images/image19.jpeg",
+      isLogo: false,
+    },
+  ];
   return (
     <div className="font-sans text-gray-800 bg-white selection:bg-[#C5A26B] selection:text-white">
       {/* SEO Hidden Text for Scrapers & Crawlers */}
       <div className="sr-only">
-        <h1>Vallavar GRC - Best GRC in Chennai, Tamil Nadu</h1>
+        <h1>Vallalar GRC - Best GRC in Chennai, Tamil Nadu</h1>
         <p>
           Leading GRC manufacturer in Chennai providing premium Glass Fiber
           Reinforced Concrete (GRC) and GRP solutions. We are recognized as the
           best GRC in Chennai and best GRC in Tamil Nadu. Looking for chennai
-          grc, grc in chennai, or grc chennai? Contact Vallavar GRC for premium
+          grc, grc in chennai, or grc chennai? Contact Vallalar GRC for premium
           architectural elements.
         </p>
       </div>
@@ -174,7 +200,7 @@ const VallavarLandingPage: React.FC = () => {
           <h3 className="text-center text-[#C5A26B] text-sm tracking-[0.2em] font-serif mb-8 flex items-center justify-center gap-4 before:h-px before:w-12 before:bg-[#C5A26B]/40 after:h-px after:w-12 after:bg-[#C5A26B]/40">
             TRUSTED BY LEADING INSTITUTIONS
           </h3>
-          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 transition-all duration-500">
             <div className="text-xl font-black font-sans">ZOHO</div>
             <div className="text-xl font-bold font-serif">SRM</div>
             <div className="text-xl font-bold font-serif">VBJ</div>
@@ -192,7 +218,7 @@ const VallavarLandingPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-[#C5A26B] text-xs font-bold tracking-[0.2em] mb-4 uppercase">
-              About Vallavar GRC
+              About Vallalar GRC
             </p>
             <h2 className="text-4xl md:text-5xl font-serif text-white leading-tight mb-6">
               ARCHITECTURE
@@ -200,7 +226,7 @@ const VallavarLandingPage: React.FC = () => {
               BEYOND ORDINARY
             </h2>
             <p className="text-gray-400 leading-relaxed mb-8">
-              Vallavar GRC is a pioneer in delivering premium GRC & GRP
+              Vallalar GRC is a pioneer in delivering premium GRC & GRP
               architectural solutions for over a decade. As the leading experts
               for Glass Fiber Reinforced Concrete Chennai, from concept to
               completion, we partner with architects and builders to create
@@ -281,7 +307,7 @@ const VallavarLandingPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-4">
             <p className="text-[#C5A26B] text-xs font-bold tracking-[0.2em] mb-4 uppercase">
-              Why Choose Vallavar
+              Why Choose Vallalar
             </p>
             <h2 className="text-3xl md:text-4xl font-serif text-white leading-tight">
               BUILT ON TRUST.
@@ -332,88 +358,83 @@ const VallavarLandingPage: React.FC = () => {
       </section>
 
       {/* --- FEATURED PROJECTS --- */}
-      <section id="projects" className="py-24 bg-[#F9F9F9]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="text-[#C5A26B] text-xs font-bold tracking-[0.2em] mb-4 uppercase">
-              Featured Projects
-            </p>
-            <h2 className="text-3xl md:text-4xl font-serif text-gray-900 flex items-center justify-center gap-4 after:h-px after:w-16 after:bg-[#C5A26B]">
-              ICONIC SPACES. TIMELESS IMPACT.
+      <section id="projects" className="py-24 bg-[#FAFAFA] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Section Header */}
+        <div className="text-center mb-16 md:mb-20">
+          <p className="text-[#C5A26B] text-xs font-semibold tracking-[0.3em] mb-3 uppercase">
+            Featured Projects
+          </p>
+          <div className="inline-flex items-center justify-center gap-4 group">
+            <span className="h-px w-8 bg-[#C5A26B]/40 block transition-all group-hover:w-12"></span>
+            <h2 className="text-2xl md:text-4xl font-serif font-light tracking-wide text-gray-900 uppercase">
+              Iconic Spaces. Timeless Impact.
             </h2>
-          </div>
-
-          <div className="w-full max-w-6xl mx-auto px-4 py-12 flex justify-center items-center">
-            {/* Adjusted columns to max out at 3 (grid-cols-3) to match the data count and center properly */}
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-              {[
-                {
-                  title: "ZOHO CORPORATE CAMPUS",
-                  loc: "Chennai",
-                  img: "images/zoho-logo-web.svg",
-                  isLogo: true,
-                },
-                {
-                  title: "SRM UNIVERSITY BLOCK",
-                  loc: "Chennai",
-                  img: "images/srm-college.jpeg",
-                  isLogo: false,
-                },
-                {
-                  title: "VBJ",
-                  loc: "Chennai",
-                  img: "images/vbj.jpeg",
-                  isLogo: false,
-                },
-                {
-                  title: "Paramount mills",
-                  loc: "Madurai",
-                  img: "images/image19.jpeg",
-                  isLogo: false,
-                },
-              ].map((proj, idx) => (
-                <div
-                  key={idx}
-                  className="w-full max-w-[360px] bg-white border border-gray-100 group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-                  {/* Fixed image container sizing and added treatment for logos vs real photography */}
-                  <div className="h-56 overflow-hidden flex items-center justify-center bg-gray-50 relative">
-                    <img
-                      src={proj.img}
-                      alt={`${proj.title} - ${proj.loc}`}
-                      className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${
-                        proj.isLogo ? "object-contain p-6" : "object-cover"
-                      }`}
-                    />
-                  </div>
-
-                  <div className="p-5 flex items-end justify-between border-t border-gray-50">
-                    <div>
-                      <h4 className="text-xs font-bold tracking-wider text-gray-900 mb-1">
-                        {proj.title}
-                      </h4>
-                      <p className="text-[#C5A26B] text-[10px] italic">
-                        {proj.loc}
-                      </p>
-                    </div>
-                    <ArrowRight
-                      size={16}
-                      className="text-gray-400 group-hover:text-[#C5A26B] group-hover:translate-x-1 transition-all"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <a
-              href="#projects"
-              className="inline-flex items-center gap-2 text-sm font-bold tracking-widest text-gray-800 hover:text-[#C5A26B] transition-colors uppercase">
-              View All Projects <ArrowRight size={16} />
-            </a>
+            <span className="h-px w-8 bg-[#C5A26B]/40 block transition-all group-hover:w-12"></span>
           </div>
         </div>
-      </section>
+
+        {/* Dynamic Project Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8 justify-center items-stretch">
+          {projects.map((proj, idx) => (
+            <div
+              key={idx}
+              className="group relative bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-between h-[420px] rounded-sm border border-gray-100/60"
+            >
+              {/* Media Container */}
+              <div className="relative w-full h-full overflow-hidden flex items-center justify-center transition-colors duration-500 bg-gray-50 group-hover:bg-white">
+                <img
+                  src={proj.img}
+                  alt={`${proj.title} - ${proj.loc}`}
+                  className={`transition-all duration-700 ease-out group-hover:scale-105 ${
+                    proj.isLogo 
+                      ? "w-3/4 h-3/4 object-contain max-h-[160px] filter opacity-80 group-hover:opacity-100" 
+                      : "w-full h-full object-cover"
+                  }`}
+                />
+                
+                {/* Visual overlay gradient for real photos */}
+                {!proj.isLogo && (
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
+                )}
+              </div>
+
+              {/* Elegant Text Overlay / Content Base */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 via-black/50 to-transparent text-white sm:bg-none sm:from-transparent sm:text-gray-950 sm:relative sm:border-t sm:border-gray-100 sm:p-5 flex items-center justify-between transition-colors duration-300 group-hover:bg-white">
+                <div className="pr-2">
+                  <h4 className="text-sm font-medium tracking-wider uppercase mb-1 line-clamp-1 transition-colors group-hover:text-gray-900">
+                    {proj.title}
+                  </h4>
+                  <p className="text-[#C5A26B] sm:text-[#C5A26B]/85 text-xs font-light tracking-wide italic">
+                    {proj.loc}
+                  </p>
+                </div>
+                
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-white/10 sm:bg-gray-50 flex items-center justify-center transition-all duration-300 group-hover:bg-[#C5A26B] group-hover:text-white">
+                  <ArrowRight
+                    size={14}
+                    className="text-white sm:text-gray-500 transition-transform duration-300 group-hover:text-white group-hover:translate-x-0.5"
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom CTA Element */}
+        <div className="text-center mt-16">
+          <a
+            href="#projects"
+            className="inline-flex items-center gap-3 text-xs font-bold tracking-[0.25em] text-gray-800 hover:text-[#C5A26B] transition-colors uppercase relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-200 hover:after:bg-[#C5A26B] after:transition-colors"
+          >
+            View All Projects 
+            <ArrowRight size={14} className="animate-pulse" />
+          </a>
+        </div>
+
+      </div>
+    </section>
 
       {/* --- OUR PROCESS --- */}
       <section id="process" className="py-24 bg-[#181818]">
@@ -544,7 +565,7 @@ const VallavarLandingPage: React.FC = () => {
       <section className="relative py-20 bg-black overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="image_f13ff7.jpg"
+            src="images/image20.png"
             alt="Background"
             className="w-full h-full object-cover opacity-20"
           />
@@ -581,7 +602,7 @@ const VallavarLandingPage: React.FC = () => {
                 "
               </span>
               <p className="text-xl md:text-2xl text-gray-800 font-serif italic mb-10 leading-relaxed">
-                Vallavar GRC's attention to detail and commitment to quality has
+                Vallalar GRC's attention to detail and commitment to quality has
                 elevated the architectural beauty of our projects.
               </p>
               <div className="flex items-center gap-4">
@@ -622,7 +643,7 @@ const VallavarLandingPage: React.FC = () => {
               EXTRAORDINARY TOGETHER
             </h2>
             <p className="text-gray-400 text-sm max-w-md">
-              Partner with Vallavar GRC for premium architectural solutions that
+              Partner with Vallalar GRC for premium architectural solutions that
               stand the test of time.
             </p>
           </div>

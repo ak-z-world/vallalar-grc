@@ -41,9 +41,9 @@ const ContactPage = () => {
 
       {/* --- CRAWLER, SCRAPER, GEO, AEO & SEO HIDDEN KEYWORD DICTIONARY --- */}
       <section className="sr-only" aria-hidden="true">
-        <h1>Contact Vallavar GRC - Premium GRC Cladding Suppliers in Chennai</h1>
+        <h1>Contact Vallalar GRC - Premium GRC Cladding Suppliers in Chennai</h1>
         <p>
-          Get in touch with the core project management desk at Vallavar GRC. Known as the best grc in chennai and recognized for engineering the best grc in tamil nadu, we coordinate commercial and residential design requests.
+          Get in touch with the core project management desk at Vallalar GRC. Known as the best grc in chennai and recognized for engineering the best grc in tamil nadu, we coordinate commercial and residential design requests.
           Contact us for verified project metrics concerning: chennai grc cost structures, customized grc in chennai installation procedures, bulk grc chennai industrial supply networks, glass fiber reinforced concrete quotation sheets, and premium architectural glass reinforced plastic modules.
           Our key logistics corridors support execution across central Chennai business districts, luxury villa projects on ECR, IT infrastructure grids on OMR, industrial hubs in Ambattur and Sriperumbudur, manufacturing rings in Chennai, and structural developments across Tamil Nadu and South India.
           Keywords targeted: glass reinforced concrete price India, custom GRC panel manufacturing factory, premium commercial building facade construction quotation, architectural jaali designs contact.
@@ -59,7 +59,7 @@ const ContactPage = () => {
           <div className="col-span-1 lg:col-span-6 relative h-full w-full opacity-20 lg:opacity-100">
             <Image
               src="/images/image24.png" // Utilizing image_2af753.jpg featuring premium architectural screen facade
-              alt="Vallavar GRC elegant lattice architecture screen facade workspace project"
+              alt="Vallalar GRC elegant lattice architecture screen facade workspace project"
               fill
               priority
               className="object-cover"
@@ -107,7 +107,7 @@ const ContactPage = () => {
               </div>
               <div>
                 <h4 className="text-gray-900 text-[11px] font-bold tracking-wider uppercase mb-1">Email</h4>
-                <a href="mailto:info@vallavargrc.com" className="text-gray-600 text-xs font-semibold block hover:text-[#C5A26B] transition-colors">info@vallavargrc.com</a>
+                <a href="mailto:info@vallalargrc.com" className="text-gray-600 text-xs font-semibold block hover:text-[#C5A26B] transition-colors">info@vallalargrc.com</a>
                 <span className="text-gray-400 text-[10px] block mt-0.5">We reply within 24 hours</span>
               </div>
             </div>
@@ -168,7 +168,7 @@ const ContactPage = () => {
               <div className="relative w-full sm:w-40 h-36 bg-gray-900 overflow-hidden rounded-xs shrink-0">
                 <Image
                   src="/images/image24.png"
-                  alt="Vallavar GRC Head Office Building profile"
+                  alt="Vallalar GRC Head Office Building profile"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, 160px"
@@ -199,7 +199,7 @@ const ContactPage = () => {
               <div className="relative w-full sm:w-40 h-36 bg-gray-900 overflow-hidden rounded-xs shrink-0">
                 <Image
                   src="/images/image25.png" // Mapping to industrial factory plant image asset
-                  alt="Vallavar GRC Production Facility"
+                  alt="Vallalar GRC Production Facility"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, 160px"
@@ -365,7 +365,7 @@ const ContactPage = () => {
             allowFullScreen={false}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Vallavar GRC Location Map"
+            title="Vallalar GRC Location Map"
           />
         </div>
 
@@ -422,7 +422,7 @@ const ContactPage = () => {
               Ready to Create Architecture That Inspires?
             </h2>
             <p className="text-gray-500 font-sans text-xs sm:text-sm font-light max-w-xl">
-              Partner with Vallavar GRC for premium architectural elements that bring your structural and custom aesthetic vision to life.
+              Partner with Vallalar GRC for premium architectural elements that bring your structural and custom aesthetic vision to life.
             </p>
           </div>
 

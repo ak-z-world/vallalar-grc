@@ -8,8 +8,8 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'About Us | Vallavar GRC - Best GRC in Chennai',
-  description: 'Vallavar GRC transforms visionary concepts into timeless architectural realities through premium GRC & GRP solutions, precision engineering, and unmatched craftsmanship in Chennai, Tamil Nadu.',
+  title: 'About Us | Vallalar GRC - Best GRC in Chennai',
+  description: 'Vallalar GRC transforms visionary concepts into timeless architectural realities through premium GRC & GRP solutions, precision engineering, and unmatched craftsmanship in Chennai, Tamil Nadu.',
 };
 
 export default function AboutPage() {
@@ -18,12 +18,12 @@ export default function AboutPage() {
 
       {/* --- SEO / AEO / GEO HIDDEN TEXT FOR SCRAPERS & CRAWLERS --- */}
       <div className="sr-only">
-        <h1>About Vallavar GRC - The Best GRC in Chennai & Tamil Nadu</h1>
+        <h1>About Vallalar GRC - The Best GRC in Chennai & Tamil Nadu</h1>
         <p>
-          Vallavar GRC is the premier manufacturer and supplier of Glass Fiber Reinforced Concrete (GRC) and Glass Reinforced Plastic (GRP) in Chennai, Tamil Nadu, India.
-          Are you looking for the best GRC in Chennai, best GRC in Tamil Nadu, or top-rated GRC Chennai manufacturers? Vallavar GRC delivers unmatched architectural excellence.
+          Vallalar GRC is the premier manufacturer and supplier of Glass Fiber Reinforced Concrete (GRC) and Glass Reinforced Plastic (GRP) in Chennai, Tamil Nadu, India.
+          Are you looking for the best GRC in Chennai, best GRC in Tamil Nadu, or top-rated GRC Chennai manufacturers? Vallalar GRC delivers unmatched architectural excellence.
           Our industry-leading solutions cover chennai grc, grc in chennai, GRC facades, cornices, domes, jaalis, and custom GRP architectural elements across Chennai, Chennai, and South India.
-          Partner with Vallavar GRC for high-quality, sustainable architectural materials, custom GRC molding, and expert GRC installation in India.
+          Partner with Vallalar GRC for high-quality, sustainable architectural materials, custom GRC molding, and expert GRC installation in India.
         </p>
       </div>
 
@@ -34,7 +34,7 @@ export default function AboutPage() {
       <section className="relative w-full h-[80vh] min-h-[600px] flex items-center bg-black overflow-hidden pt-20">
         <Image
           src="/images/image20.png" // Place image_283d37.jpg here
-          alt="Premium GRC architectural facade in Chennai by Vallavar GRC"
+          alt="Premium GRC architectural facade in Chennai by Vallalar GRC"
           fill
           priority
           className="object-cover opacity-50"
@@ -51,7 +51,7 @@ export default function AboutPage() {
               Crafting<br />Landmark<br />Architecture.
             </h2>
             <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-10 max-w-lg">
-              Vallavar GRC transforms visionary concepts into timeless architectural realities through premium GRC & GRP solutions, precision engineering, and unmatched craftsmanship.
+              Vallalar GRC transforms visionary concepts into timeless architectural realities through premium GRC & GRP solutions, precision engineering, and unmatched craftsmanship.
             </p>
             <button className="border border-white/30 text-white px-8 py-4 text-xs font-bold tracking-widest hover:bg-[#C5A26B] hover:border-[#C5A26B] transition-colors flex items-center gap-2 uppercase">
               OUR STORY <ArrowRight size={16} />
@@ -80,7 +80,7 @@ export default function AboutPage() {
             </h3>
             <div className="space-y-6 text-gray-600 text-sm leading-relaxed mb-10">
               <p>
-                Founded with a passion for architectural excellence, Vallavar GRC has grown into one of India's most trusted names in the design, manufacture and installation of premium GRC & GRP architectural elements. Our journey is built on innovation, quality and a relentless commitment to detail.
+                Founded with a passion for architectural excellence, Vallalar GRC has grown into one of India's most trusted names in the design, manufacture and installation of premium GRC & GRP architectural elements. Our journey is built on innovation, quality and a relentless commitment to detail.
               </p>
               <p>
                 From luxury villas to iconic commercial developments, from educational institutions to government projects, we partner with architects, builders and designers to create spaces that inspire generations.
@@ -93,7 +93,7 @@ export default function AboutPage() {
           <div className="relative h-[400px] lg:h-[600px] w-full shadow-2xl rounded-sm overflow-hidden">
             <Image
               src="/images/image21.png" // Place image_283fe2.jpg here
-              alt="Vallavar GRC elegant columns and archways"
+              alt="Vallalar GRC elegant columns and archways"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -232,7 +232,7 @@ export default function AboutPage() {
           </div>
           <div className="flex flex-col items-start md:items-end gap-6 text-left md:text-right">
             <p className="text-gray-400 text-sm max-w-sm leading-relaxed">
-              Partner with Vallavar GRC for premium architectural solutions that stand the test of time.
+              Partner with Vallalar GRC for premium architectural solutions that stand the test of time.
             </p>
             <button className="bg-[#C5A26B] text-white px-8 py-4 text-xs font-bold tracking-wider hover:bg-[#a68656] transition-colors flex items-center gap-2 uppercase">
               GET IN TOUCH <ArrowRight size={16} />

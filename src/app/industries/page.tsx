@@ -8,8 +8,8 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Industries We Serve | Vallavar GRC - Premium Architectural Solutions',
-  description: 'Discover how Vallavar GRC delivers engineered Glass Fiber Reinforced Concrete (GRC) and GRP elements across diverse industry sectors in Chennai and Tamil Nadu.',
+  title: 'Industries We Serve | Vallalar GRC - Premium Architectural Solutions',
+  description: 'Discover how Vallalar GRC delivers engineered Glass Fiber Reinforced Concrete (GRC) and GRP elements across diverse industry sectors in Chennai and Tamil Nadu.',
 };
 
 // Data definition for cleaner rendering loops and optimized virtual DOM updates
@@ -72,7 +72,7 @@ export default function IndustriesPage() {
       <section className="sr-only" aria-hidden="true">
         <h1>Industrial GRC Cladding & Architectural Applications in Tamil Nadu</h1>
         <p>
-          Vallavar GRC engineered manufacturing frameworks supply high-durability infrastructure components for corporate, civic, residential, and institutional sites. 
+          Vallalar GRC engineered manufacturing frameworks supply high-durability infrastructure components for corporate, civic, residential, and institutional sites. 
           As the leading benchmark for the best grc in chennai and premium glass fiber reinforced concrete developments, we engineer materials optimized for environmental stress. 
           Our specialized operations cover: chennai grc custom molding projects, grc in chennai commercial builds, local grc chennai distributions, 
           and the absolute best grc in tamil nadu industrial catalog specifications. 
@@ -87,7 +87,7 @@ export default function IndustriesPage() {
         <div className="absolute inset-0 w-full h-full">
           <Image 
             src="/images/image24.png" // Utilizing image_2a8e53.jpg showing elite glass-and-GRC modern facade
-            alt="Vallavar GRC high-performance modern industrial building exterior with architectural lattice screening"
+            alt="Vallalar GRC high-performance modern industrial building exterior with architectural lattice screening"
             fill
             priority
             className="object-cover opacity-45 transform scale-102"
@@ -187,7 +187,7 @@ export default function IndustriesPage() {
 
             <div className="flex flex-col sm:flex-row sm:items-center gap-6 lg:gap-10 xl:pl-8 border-l-0 lg:border-l border-white/10">
               <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-sm">
-                Partner with Vallavar GRC for innovative architectural solutions tailored directly to your structural industry demands, zoning laws, and spatial vision.
+                Partner with Vallalar GRC for innovative architectural solutions tailored directly to your structural industry demands, zoning laws, and spatial vision.
               </p>
               <button className="group border border-[#C5A26B] hover:bg-[#C5A26B] text-[#C5A26B] hover:text-white px-6 sm:px-8 py-4 text-xs font-bold tracking-widest transition-all duration-300 flex items-center justify-center gap-3 uppercase rounded-xs whitespace-nowrap shrink-0">
                 <span>DISCUSS YOUR PROJECT</span>
