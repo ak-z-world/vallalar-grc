@@ -27,6 +27,12 @@ const ContactPage = () => {
     agreed: false,
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [statusMessage, setStatusMessage] = useState<{
+    type: "success" | "error" | null;
+    text: string;
+  }>({ type: null, text: "" });
+
   const handleInputChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -40,10 +46,54 @@ const ContactPage = () => {
     setFormData((prev) => ({ ...prev, agreed: e.target.checked }));
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    // Implementation of production endpoint submission logic
-    console.log("Submitting query payload: ", formData);
+    setIsSubmitting(true);
+    setStatusMessage({ type: null, text: "" });
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(
+          result.error || "Failed to submit. Please check your inputs.",
+        );
+      }
+
+      // Success State
+      setStatusMessage({
+        type: "success",
+        text: "Thank you! Your message has been sent successfully. Our team will contact you shortly.",
+      });
+
+      // Reset Form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        interest: "",
+        projectDetails: "",
+        agreed: false,
+      });
+    } catch (err: any) {
+      setStatusMessage({
+        type: "error",
+        text:
+          err.message ||
+          "An error occurred while submitting. Please try again.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -399,12 +449,25 @@ const ContactPage = () => {
                 </label>
               </div>
 
-              {/* Submission Execution Control Handle */}
+              {/* Status Message Banner */}
+              {statusMessage.text && (
+                <div
+                  className={`p-4 rounded-xs text-xs font-semibold ${
+                    statusMessage.type === "success"
+                      ? "bg-green-50 text-green-800 border border-green-200"
+                      : "bg-red-50 text-red-800 border border-red-200"
+                  }`}>
+                  {statusMessage.text}
+                </div>
+              )}
+
+              {/* Submission Button */}
               <div className="pt-4">
                 <button
                   type="submit"
-                  className="w-full sm:w-auto bg-[#181818] hover:bg-[#C5A26B] text-white font-sans text-xs font-bold tracking-widest px-8 py-4 transition-all duration-300 flex items-center justify-center gap-3 uppercase rounded-xs shadow-md shadow-black/10">
-                  <span>SEND MESSAGE</span>
+                  disabled={isSubmitting}
+                  className="w-full sm:w-auto bg-[#181818] hover:bg-[#C5A26B] disabled:bg-gray-400 text-white font-sans text-xs font-bold tracking-widest px-8 py-4 transition-all duration-300 flex items-center justify-center gap-3 uppercase rounded-xs shadow-md shadow-black/10 cursor-pointer disabled:cursor-not-allowed">
+                  <span>{isSubmitting ? "SENDING..." : "SEND MESSAGE"}</span>
                   <ArrowRight size={14} />
                 </button>
               </div>
