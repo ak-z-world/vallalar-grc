@@ -25,7 +25,7 @@ export const viewport: Viewport = {
 
 // 3. AEO, GEO, and SEO Metadata Configuration
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vallalar-grc.vercel.app"), // REPLACE WITH YOUR ACTUAL PRODUCTION URL
+  metadataBase: new URL("https://vallalargrc.in"), // REPLACE WITH YOUR ACTUAL PRODUCTION URL
   title: {
     default: "Vallalar GRC - Premium GRC & GRP Architectural Solutions in Chennai",
     template: "%s | Vallalar GRC",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vallalar GRC - Premium Architectural Solutions",
     description: "Transforming visionary concepts into iconic structures with precision-engineered GRC & GRP elements in Chennai and Tamil Nadu.",
-    url: "https://vallalar-grc.vercel.app",
+    url: "https://vallalargrc.in",
     siteName: "Vallalar GRC",
     images: [
       {
@@ -93,9 +93,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "Manufacturer"],
     "name": "Vallalar GRC",
-    "image": "https://vallalar-grc.vercel.app/og-image.png",
-    "@id": "https://vallalar-grc.vercel.app",
-    "url": "https://vallalar-grc.vercel.app",
+    "image": "https://vallalargrc.in/og-image.png",
+    "@id": "https://vallalargrc.in",
+    "url": "https://vallalargrc.in",
     "telephone": "+919566665001",
     "email": "info@vallalargrc.com",
     "address": {
