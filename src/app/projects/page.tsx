@@ -245,12 +245,6 @@ const ProjectsPage = () => {
                     </p>
                   </div>
 
-                  <div className="shrink-0 w-8 h-8 rounded-full bg-white/10 sm:bg-gray-50 border border-white/20 sm:border-transparent flex items-center justify-center text-inherit transition-all duration-300 group-hover:bg-[#C5A26B] group-hover:text-white">
-                    <ArrowRight
-                      size={14}
-                      className="transition-transform duration-300 group-hover:translate-x-0.5"
-                    />
-                  </div>
                 </div>
               </div>
             );
